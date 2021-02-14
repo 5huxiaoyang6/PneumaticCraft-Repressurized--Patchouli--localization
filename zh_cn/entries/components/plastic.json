@@ -1,0 +1,18 @@
+{
+  "name": "塑料",
+  "icon": "forge:bucketfilled{FluidName:'plastic',Amount:1000}",
+  "category": "components",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)塑料/$是$(pncr)中一种重要的合成部件。$(p)$(item)熔融塑料/$是由$(l:manufacturing/refinery)LPG/$于$(item)煤炭/$在$(l:manufacturing/thermopneumatic_processing_plant)热气动加工机/$中合成而来。"
+    },
+    {
+      "type": "spotlight",
+      "title": "塑料板",
+      "item": "pneumaticcraft:plastic:2",
+      "text": "$(item)熔融塑料/$可以在$(l:manufacturing/plastic_mixer)塑料混合机/$中与染料混合来制作不同颜色的 $(item)塑料板/$。$(p)需要注意的是在$(italic)固化/$塑料的时候你不需要为$(item)塑料混合机/$提供任何的$(l:base_concepts/heat)热量/$来进行这一步骤。"
+    }
+  ]
+}

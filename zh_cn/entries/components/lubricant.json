@@ -1,0 +1,17 @@
+{
+  "name": "润滑油",
+  "icon": "forge:bucketfilled{FluidName:'lubricant',Amount:1000}",
+  "category": "components",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)润滑油/$用于制作$(l:base_concepts/upgrades#speed)速度升级/$。$(p)它是在$(l:manufacturing/thermopneumatic_processing_plant)热气动加工机/$中用$(thing)柴油/$和$(thing)红石/$制作的。"
+    },
+    {
+      "type": "spotlight",
+      "item": "forge:bucketfilled{FluidName:'lubricant',Amount:1000}",
+      "text": "$(italic)滑溜溜的东西/$"
+    }
+  ]
+}

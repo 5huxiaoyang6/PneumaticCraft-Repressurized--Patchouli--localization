@@ -1,0 +1,42 @@
+{
+  "name": "印刷电路板（PCB）",
+  "icon": "pneumaticcraft:printed_circuit_board",
+  "category": "components",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)印刷电路板/$(PCB's)是用于高级机械或工具的重要部件。制作一个$(item)PCB/$需要几个步骤：$(p)首先在$(l:manufacturing/pressure_chamber)压力室/$按照旁边的图片中制作一个$(item)空印刷电路板/$。之后的处理有两种方式（详见后面）。"
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "item": "pneumaticcraft:empty_pcb:100"
+    },
+    {
+      "type": "text",
+      "title": "方法1",
+      "text": "在一开始你只能使用这种方法，而且这种方法很慢：你可以将在$(l:manufacturing/uv_light_box)紫外灯光箱/$中照射过的$(item)空印刷电路板/$扔进$(l:manufacturing/etching_acid)蚀刻酸/$中进行化学蚀刻，使其变为一个$(item)未组装的印刷电路板/$。"
+    },
+    {
+      "type": "smelting",
+      "title": "回收失效的印刷电路板",
+      "recipe": "pneumaticcraft:failed_pcb",
+      "text": "如果$(item)空印刷电路板/$没有在$(l:manufacturing/uv_light_box)紫外光灯箱/$中100%照射，在蚀刻酸中会有一定失败的概率。$(item)失效的印刷电路板/$可以通过熔炉（或者其他熔炼设备）烧制来回收。"
+    },
+    {
+      "type": "spotlight",
+      "title": "方法2",
+      "item": "pneumaticcraft:assembly_controller",
+      "text": "一旦你拥有了一套$(l:manufacturing/assembly_system)装配系统/$，你可以通过$(item)装配程序：激光/$直接将$(item)空印刷电路板/$变成$(item)未组装的印刷电路板/$。$(p)这不需要再在$(item)紫外光灯箱/$中照射或者是扔入蚀刻酸中蚀刻。"
+    },
+    {
+      "type": "pneumaticcraft:assembly_system",
+      "item": "pneumaticcraft:unassembled_pcb"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:printed_circuit_board",
+      "text": "终于，你可以再加几个$(l:components/capacitor)电容/$和$(l:components/transistor)晶体管/$来完成$(item)印刷电路板（PCB）/$的组装啦！"
+    }
+  ]
+}

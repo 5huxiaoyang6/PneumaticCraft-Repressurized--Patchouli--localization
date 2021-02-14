@@ -1,0 +1,17 @@
+{
+  "name": "核弹病毒",
+  "icon": "pneumaticcraft:nuke_virus",
+  "category": "components",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个特殊的组件，只有在试图入侵$(l:machines/security_station)安全站/$时才会用到。它不能被制作，只能在地牢战利品中找到，或者（很少）通过村民交易获得。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:nuke_virus",
+      "text": " 当入侵时使用$(thing)核弹病毒/$将会重击一个节点，并立即骇入。"
+    }
+  ]
+}
