@@ -1,0 +1,22 @@
+{
+  "name": "气动能源炉",
+  "icon": "pneumaticcraft:pneumatic_dynamo",
+  "category": "machines",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气动能源炉/$ 通过消耗 $(l:base_concepts/pressure)压缩空气/$ 产生 $(thing)Forge Energy/$, 兼容 $(thing)RF/$ 或其他的FE能量系统. 默认生产效率为 40 FE/tick, 但可以通过添加 $(l:base_concepts/upgrades#speed)速度升级/$ 来提升. 输出效率是 $(item)能源炉/$ 生产FE效率的两; 默认为 80 FE/tick, 但可以通过添加速度升级提升."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:pneumatic_dynamo",
+      "text": "影响生产效率的一个因素是能源炉的 $(l:base_concepts/heat)温度/$. 能源炉在工作时需要 $(thing)散热/$, 因其效率会随着热量的上升而降低, 甚至效率完全降为0."
+    },
+    {
+      "type": "crafting",
+      "text": "制作气动能源炉",
+      "recipe": "pneumaticcraft:pneumatic_dynamo"
+    }
+  ]
+}

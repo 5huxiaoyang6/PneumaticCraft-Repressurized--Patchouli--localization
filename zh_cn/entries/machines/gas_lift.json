@@ -1,0 +1,30 @@
+{
+  "name": "气举",
+  "icon": "pneumaticcraft:gas_lift",
+  "category": "machines",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)气举/$ 从根本上来是一种泵. 依靠$(l:base_concepts/pressure)气压/$ 降低流体的局部密度从而使其向上运动.$(p)当提供足够气压时, 它会向下伸展出 $(l:tubes/pressure_tubes)压力管道/$ (需要你来提供) 直到接触到液面, 然后将其抽出来. 这使得它很适合用于 $(l:base_concepts/oil)石油/$ 的开采, 因为石油通产都深藏在地下."
+    },
+    {
+      "type": "text",
+      "text": "任何阻挡它的方块都会被破坏且不会有掉落物. 对于破坏泥土或是沙子这样柔软的方块消耗的压缩空气很少, 而对于黑曜石这类坚硬的方块则要消耗很多. 如果你使用 $(l:tubes/pressure_tubes#advanced)高级压力管道/$, 压缩空气的消耗会降低 50%.$(p)泵送液体所需的压缩空气用量与泵送深度成线性关系, 及延伸的管道数量."
+    },
+    {
+      "type": "text",
+      "title": "Mode Tab",
+      "text": "气举有三个模式可供选择:$(li)$(#00f)泵出并清空缓存/$ 将缓存内的所有流体都排出.$(li)$(#00f)泵出并保留流/$ 和上面一样, 但是会保留1000mB的液体在缓存里用于过滤. 这对于只想抽取一种液体来很有用."
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(#00f)管道回收/$ 将会停止 $(thing)气举/$ 的工作并将伸展出去的管道会受到物品槽."
+    },
+    {
+      "type": "crafting",
+      "text": "制作气举",
+      "recipe": "pneumaticcraft:gas_lift"
+    }
+  ]
+}

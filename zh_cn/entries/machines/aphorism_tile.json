@@ -1,0 +1,20 @@
+{
+  "name": "格言瓷砖",
+  "icon": "pneumaticcraft:aphorism_tile",
+  "category": "machines",
+  "advancement": "pneumaticcraft:assembly_controller",
+  "pages": [
+    {
+      "type": "text",
+      "text": "从理论上来说, 你可以在它上面输入无限多的字符. 当你输入字符时, 它会自动缩放以保持最佳的显示.$(p)当你放置格言瓷砖时, $(ttcolor)$(t:This can be disabled in config - see 'B:dramaSplash')默认的/$ 他会展示一些 $(l:http://mc-drama.herokuapp.com/)Drama Generator/$ 生成的文本."
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(item)格言瓷砖/$ 能够被空手 $(thing)右击/$ 编辑.$(li)通过使用 $(thing)Alt + 0-9/a-f/l/m/n/o/r/$ 键来修改文字的格式($(l:https://minecraft.gamepedia.com/Formatting_codes)Minecraftd 的样式代码/$).$(li)按住 $(thing)F1/$ 会弹出编辑的帮助界面.$(li)$(item)格言瓷砖/$ 能够被燃料 $(thing)右击/$ 着色 (支持矿辞). 通过右击边框或背景可以改变对应区域的颜色."
+    },
+    {
+      "type": "pneumaticcraft:assembly_system",
+      "item": "pneumaticcraft:aphorism_tile"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "真空泵",
+  "icon": "pneumaticcraft:vacuum_pump",
+  "category": "machines",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)真空泵/$是用来制造真空的机器。为了做到这一点，机器消耗$(l:base_concepts/pressure)加压空气/$.$(p)应在$(#0c0)'+'侧/$施加正压；当达到最小工作压力时，$(item)真空泵/$开始抽气$(#c00)'-'侧/$的压力下降，最低为-1.0bar，这就是真空。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/vacuum_pump.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "Applications",
+      "text": "在撰写本文时，负（真空）压力只存在两种用途：$(li)解除魔法：将一个$(item)附魔物品/$ 和一个香草$(item)书/$放入$(l:manufacturing/pressure_chamber)压力室/$中并给予足够的负压。随机的附魔会从物品转移到书上。$(li)$(l:tubes/air_grate_module)空气栅格模块/$会将实体吸引到它的旁边。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个真空泵",
+      "recipe": "pneumaticcraft:vacuum_pump"
+    }
+  ]
+}

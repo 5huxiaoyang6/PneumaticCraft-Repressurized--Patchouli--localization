@@ -1,0 +1,58 @@
+{
+  "name": "安全站",
+  "icon": "pneumaticcraft:security_station",
+  "category": "machines",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "如果你想阻止别人从一片区域内进行恶意破坏，你可以使用$(thing)安全站/$。$(p)这个设备阻止其工作范围内所有非信任玩家的玩家交互行为，即没有容器或者是GUI能被打开，方块不能被放置和破坏。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:security_station",
+      "text": "这听起来不错，不过要搭建起一个$(thing)安全站/$你得做些事情来保障它的安全性。这样做的原因是$(thing)安全站/可以被$(l:machines/security_station#hacking)骇入/$。安全站的骇入系统很大程度上受到$(l:https://www.youtube.com/watch?v=nQ0rPLlU8v4)杀出重围：人类革命 的 骇入系统/$的启发。（译者注：$(l:https://www.bilibili.com/video/BV1hr4y1P73t/)B站链接/$）"
+    },
+    {
+      "type": "text",
+      "text": "为了建立一个$(thing)安全站/$，你需要放置一些$(l:components/network_components)网络组件/$ 在GUI格子里来形成一个$(thing)网络/$。在每一个网络中都应该有一个$(l:components/network_components#diagnostic)诊断子程序/$，一个$(l:components/network_components#io_port)网络IO接口/$还有一个$(l:components/network_components#registry)网络注册表/$。 $(p)这三个组件必须相互之间连接，你可以用网络节点$(l:components/network_components#node)网络节点/$来实现连接。放多个网络组件在同一格子能够增加$(italic)节点等级/$这意味着会花费更多的时间让黑客或者诊断子程序捕捉到此节点。"
+    },
+    {
+      "type": "text",
+      "title": "升级",
+      "text": "$(thing)安全站/$可以加入一些升级：$(li)$(l:base_concepts/upgrades#entity_tracker)实体追踪升级/$ 来增加黑客被检测到的几率，每一个升级可以增加20%的几率。$(li)$(l:base_concepts/upgrades#security)安全升级/$ 可以增加黑客的$(l:armor/pneumatic_helmet)气动头盔/$中开始骇入所需的安全升级的数量。$(li)$(l:base_concepts/upgrades#range)范围升级/$ 增加安全站所保护的范围，每次增加一格，最多到十六格。"
+    },
+    {
+      "type": "text",
+      "title": "放行好友",
+      "text": "你可以将友好的玩家添加至你的$(thing)安全站/$来运行他们在保护的区域进行交互，通过$(bold)Shared Users/$侧边栏添加玩家名称。$(p)你也可以在这里移除信任的玩家，只需要点击玩家的名字就可以移除。"
+    },
+    {
+      "type": "text",
+      "title": "遭遇骇入",
+      "text": "当有人骇入你的$(thing)安全站/$时，你可以在$(bold)Problems/$和$(bold)Status/$侧边栏看见，可以显示$(italic)谁/$骇入了你的系统。那些玩家（而且仅仅是那些骇入的玩家）就可以在你安全站的范围内交互。要恢复安全站，你必须通过GUI侧边的$(bold)Reboot/$按钮$(italic)重启/$ $(thing)安全站/$。重启过程需要60秒钟的时间，在这个期间安全站的范围完全没有保护！"
+    },
+    {
+      "type": "text",
+      "title": "骇入",
+      "anchor": "hacking",
+      "text": "要打开一个不属于你的$(thing)安全站/$，你需要一个装有$(l:base_concepts/upgrades#security)安全升级/$的$(l:armor/pneumatic_helmet)气动头盔/$。当你进行骇入时，一个相似的GUI会打开。观看$(l:https://www.youtube.com/watch?v=Lgmpslbrrwo)此视频 (很老但是依然相关)/$（译者搬运$(l:https://www.bilibili.com/video/BV1mX4y1N7XR/)B站/$来学习怎样骇入。$(p)要捕捉一个节点，$(thing)左键/$ 它就行，要加固一个捕获的节点，$(thing)右键/$即可。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/hacking.png"
+      ]
+    },
+    {
+      "type": "text",
+      "title": "提示",
+      "text": "$(li)把你的$(thing)安全站/$隐藏好，保护好。$(li)你可以用多个$(thing)安全站/$来保护一片区域，所有的安全站都要被黑才能放行黑客。$(li)考虑使用主动式防御，例如装有战斗程序的$(l:tools/drone)无人机/$，或者$(l:machines/sentry_turret)哨戒炮 /$ $(li)一个被黑的$(thing)安全站/$可以设置成发出一个红石信号，其可以用来触发某些附加的防御措施（也许是埋在安全站地下的TNT？）"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个安全站",
+      "recipe": "pneumaticcraft:security_station"
+    }
+  ]
+}

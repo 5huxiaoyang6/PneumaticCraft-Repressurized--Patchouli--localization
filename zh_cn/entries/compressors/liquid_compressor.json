@@ -1,0 +1,17 @@
+{
+  "name": "液体压缩机",
+  "icon": "pneumaticcraft:liquid_compressor",
+  "category": "compressors",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)液体压缩机/$是一种消耗流体燃料生产$(l:base_concepts/pressure)压缩空气/$的简易发电机。打开GUI $(bold)可用燃料/$ 标签来查看哪些流体能作为燃料以及其效率。值得注意的是熔岩一类的高温流体也算在燃料内。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个$(item)液体压缩机/$",
+      "recipe": "pneumaticcraft:liquid_compressor"
+    }
+  ]
+}

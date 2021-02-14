@@ -1,0 +1,17 @@
+{
+  "name": "通量压缩机",
+  "icon": "pneumaticcraft:flux_compressor",
+  "category": "compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)通量压缩机/$将$(thing)Forge Energy/$（兼容$(thing)Redstone Flux/$以及许多其他模组的能量）转换为$(l:base_concepts/pressure)压缩空气/$。它的基础消耗为40FE/tick，可以安装$(l:base_concepts/upgrades#speed)速度升级/$提升速度。$(p)通量压缩机有着100,000FE的能量缓存而且接收能量速度是消耗的两倍。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个$(item)通量压缩机/$$(p)这个压缩机需要$(l:base_concepts/heat)冷却/$，当热量上升时机械效率降低，直至零点。",
+      "recipe": "pneumaticcraft:flux_compressor"
+    }
+  ]
+}

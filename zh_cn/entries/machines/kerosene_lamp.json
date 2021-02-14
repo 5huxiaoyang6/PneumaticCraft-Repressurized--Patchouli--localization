@@ -1,0 +1,25 @@
+{
+  "name": "煤油灯",
+  "icon": "pneumaticcraft:kerosene_lamp",
+  "category": "machines",
+  "advancement": "pneumaticcraft:refinery",
+  "pages": [
+    {
+      "type": "text",
+      "text": "和你猜的一样, $(item)煤油灯/$ 是一种强大的通过消耗 $(l:manufacturing/refinery)煤油/$ 运作的照明设备. 它类似于你可能习惯的大范围光源, 比如 $(thing)神秘时代的奥术灯)/$.$(p)$(italic)技术上来, 煤油灯可以接受任何的流燃料, 但烧煤油是具有最高效率的, 甚至比液化石油气还高./$"
+    },
+    {
+      "type": "text",
+      "text": "$(item)煤油灯/$ 的默认范围是10格. 然而可以在GUI中调整, 最大为30格. 范围越大, 煤油的消耗速率越高. 如果你扩为原来范围的两倍, 燃料的消耗会提升为原来八倍!$(p)然而, 燃料的消耗本来就很慢. 1000mB的煤油在默认10格的范围情况下, 煤油灯可以运作 $(ttcolor)$(t:煤油灯的效率可以在模组配置文件中修改 : 'D:keroseneLampFuelEfficiency')40 分钟/$."
+    },
+    {
+      "type": "text",
+      "text": "$(item)煤油灯/$ 能够被 $(thing)红石信号/$ 控制, 如同其它的 $(pncr) 方块一样. 除了支持红石的高低信号控制模式, 还支持 $(bold)信号强度控制/$ 模式. 这会使得 (正如名字所说) 煤油灯的范围会随着信号强度的变化而变化.$(p)假设, 默认范围是10格, 当提供的$(#f00)红石信号/$ 强度为8 (低于15), 煤油灯的范围会被调整为 5."
+    },
+    {
+      "type": "crafting",
+      "text": "制作煤油灯",
+      "recipe": "pneumaticcraft:kerosene_lamp"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "物流框架",
+  "icon": "pneumaticcraft:logistic_frame_passive_provider",
+  "category": "logistics",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)物流框架/$是用于标记物品或流体容器为$(thing)物流系统/$一部分的非方块工具。$(p)防止下的框架可以通过手持$(l:tools/logistics_configurator)物流配置器/$$(thing)右击/$来配置，$(thing)潜行右键/$来拆卸。框架也可以通过手持同种框架右击来配置。"
+    },
+    {
+      "type": "text",
+      "text": "框架可以配置的属性有：$(li)所有框架都支持$(thing)过滤/$输入输出的流体或者物品。$(li)$(thing)过滤设置/$标签能设置是否匹配$(thing)物品元数据（meta值）/$、$(thing)物品NBT/$、白/黑名单（默认白名单）。$(li)$(thing)朝向/$标签能设置$(ttcolor)$(t:物流模块忽略这一点,并且总是将你放置框架所朝的面的对面作为默认面)物流无人机/$与容器交互的面。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)对于$(l:logistics/frames#requester)物流请求框架/$，$(thing)最小请求数量（最小订单量）/$标签允许你设置一次转移的最小物品或者流体数量，可以有效防止小运载的无人机不断地输送同一容器内容。$(li)最后，所有框架还可以设置$(thing)是否可见（隐形）/$，当设置为否时玩家需要手持物流框架或者配置器才能看见。"
+    },
+    {
+      "type": "crafting",
+      "anchor": "active_provider",
+      "title": "物流主动供应框架",
+      "recipe": "pneumaticcraft:logistic_frame_active_provider",
+      "text": "$(item)物流主动供应框架/$能向$(l:logistics/frames#requester)物流请求框架/$、$(l:logistics/frames#storage)物流存储框架/$、$(l:logistics/frames#default_storage)物流默认存储框架/$提供物品或流体。"
+    },
+    {
+      "type": "crafting",
+      "anchor": "passive_provider",
+      "title": "物流被动供应框架",
+      "recipe": "pneumaticcraft:logistic_frame_passive_provider",
+      "text": "$(item)物流被动供应框架/$能向$(l:logistics/frames#requester)物流请求框架/$提供物品或流体。"
+    },
+    {
+      "type": "crafting",
+      "anchor": "storage",
+      "title": "物流存储框架",
+      "recipe": "pneumaticcraft:logistic_frame_storage",
+      "text": "$(item)物流存储框架/$能接受来自$(l:logistics/frames#active_provider)物流主动供应框架/$的物品或者流体，以及能向$(l:logistics/frames#requester)物流请求框架/$供应物品。"
+    },
+    {
+      "type": "crafting",
+      "anchor": "default_storage",
+      "title": "物流默认存储框架",
+      "recipe": "pneumaticcraft:logistic_frame_default_storage",
+      "text": "$(item)物流默认存储框架/$能接受来自$(l:logistics/frames#active_provider)物流主动供应框架/$的物品或者流体，以及能向$(l:logistics/frames#requester)物流请求框架/$和$(l:logistics/frames#storage)物流存储框架/$供应资源。其有着比物流存储框架更低的优先级，也就是物流存储框架会在可能的情况下先被使用。"
+    },
+    {
+      "type": "crafting",
+      "anchor": "requester",
+      "title": "物流请求框架",
+      "recipe": "pneumaticcraft:logistic_frame_requester",
+      "text": "$(item)物流请求框架/$能向其他的框架库存请求物品或是流体。对于这些框架，使用框架的配置GUI来设置$(thing)存储/$多少数量的物品或者流体。"
+    }
+  ]
+}

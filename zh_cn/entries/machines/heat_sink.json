@@ -1,0 +1,30 @@
+{
+  "name": "散热片",
+  "icon": "pneumaticcraft:heat_sink",
+  "category": "machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)散热片/$ 是一种散发 $(l:base_concepts/heat)热量/$ 的方块 (不仅仅是热, 也可以是冷).$(p)注意, 接触到的 $(item)散热片/$ 如果温度高于 50°C 或者低于 -60°C 会使你受伤!$(p)$(item)散热片/$ 只作用于所贴着的方块. 如果需要连接多个 $(item)散热片/$, 可以使用 $(l:base_concepts/basic_materials#compressed_iron_block)压缩铁快/$ 来提供更多的面."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/heat_sinks.png"
+      ],
+      "border": "true",
+      "text": "$(italic)$(l:compressors/advanced_liquid_compressor)高级液体压缩机/$ 上贴着多个 $(italic)with multiple 散热片/$"
+    },
+    {
+      "type": "text",
+      "title": "主动散热",
+      "text": "你可以将 $(item)散热片/$ 摆放在 $(l:tubes/air_grate_module#active_cooling)空气栅管道模块/$ 的作用范围内. 当你把模块摆放在 $(l:tubes/pressure_tubes)压力管道/$ 上并右击它时会显示出范围. 冷却效果可以通过摆放多个模块来叠加."
+    },
+    {
+      "type": "crafting",
+      "text": "制作散热片",
+      "recipe": "pneumaticcraft:heat_sink"
+    }
+  ]
+}

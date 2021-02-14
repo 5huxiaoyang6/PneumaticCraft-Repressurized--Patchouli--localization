@@ -1,0 +1,49 @@
+{
+  "name": "热力压缩器",
+  "icon": "pneumaticcraft:thermal_compressor",
+  "category": "compressors",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)热力压缩器/$是一种使用水平对面的$(l:base_concepts/heat)温度/$差异来产生$(l:base_concepts/pressure)压缩空气/$的简易发电机。温差越大，产生的气体越多。$(p)注意：单纯使用$(l:machines/vortex_tube)涡流管/$是行不通的，这样只会白白浪费气压。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/thermal_compressor.png"
+      ],
+      "border": "true",
+      "text": "$(italic)使用熔岩和浮冰提供温差/$"
+    },
+    {
+      "type": "text",
+      "text": "$(item)热力压缩器/$的南北面、东西面各自为热力连接面，但是十字形上没有热量的交叉，所以一个压缩器会有两个独立的温差判定。$(p)热量会通过热力连接面平衡，所以你需要非点力来维持有效的温差。"
+    },
+    {
+      "type": "text",
+      "title": "应用",
+      "text": "这里有三种基础情景也许能用得到$(item)热力压缩器/$：$(li)从$(item)涡流管/$的一端利用浪费的热量（或者冷量！）。正常来说你只会利用涡流管热的或冷的那面，然后在另一面贴上$(l:machines/heat_sink)散热片/$来散热。然而，$(item)热力压缩器/$提供了再利用方式。"
+    },
+    {
+      "type": "text",
+      "title": "应用 (续)",
+      "text": "$(li)从高级的压缩机（例如$(l:compressors/advanced_air_compressor)高级空气压缩机/$）利用浪费的热量。一般来讲你应该通过一个或多个$(l:tools/heat_sink)散热片/$将这些热量散入空气中，但是有了热力压缩器，又有了重新利用它们的可能。"
+    },
+    {
+      "type": "text",
+      "title": "应用 (续)",
+      "text": "$(li)如果你有方法获得大量本身热或冷的物质，例如$(l:base_concepts/heat_sources)熔岩或者其他模组中的方块/$，你也许可以靠他们来产生一些气压。你大概会需要实现热源的自动放置与废弃物的自动回收，$(l:tools/drone)无人机/$能够做到，当然其他模组中很多东西也行。"
+    },
+    {
+      "type": "text",
+      "title": "红石控制",
+      "text": "压缩机可以被红石信号所控制，如果被关闭，将会停止产生气压，南北或东西两面之间的热阻会急剧增加（一点点热量还是会交换，但是比压缩机运行时少太多了）。这个特性可以在气压没有被消耗时用于存储温差的能量，例如，你的涡流管满压力时。"
+    },
+    {
+      "type": "crafting",
+      "text": "Creating a $(item)Thermal Compressor/$",
+      "recipe": "pneumaticcraft:thermal_compressor"
+    }
+  ]
+}

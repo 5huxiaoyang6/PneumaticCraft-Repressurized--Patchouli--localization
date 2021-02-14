@@ -1,0 +1,26 @@
+{
+  "name": "电力压缩机",
+  "icon": "pneumaticcraft:electric_compressor",
+  "category": "compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "flag": "pneumaticcraft:electricCompressorEnabled",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)电力压缩机/$能够使用$(thing)IC2的EU/$产生压缩空气。它默认的效率是40%，但可以在$(ttcolor)$(t:见 'I:electricCompressorEfficiency'条)配置文件/$中修改。$(p)它类似于IC2的一级电压的机械，所以如果提供电压大于32EU/T，就会爆！炸！然而你可以像普通IC2机械一样放入$(item)高压升级/$来提升电压等级。"
+    },
+    {
+      "type": "text",
+      "text": "压缩机输出的mL/tick计算如下：$(p) $(formula)输入EU电压 ÷ E x 400/$ ，E代表效率。例如，在默认40%的效率以及32EU/tick的电压下，压缩机的空气产出为 $(formula)32 ÷ 40 x 400 = 320mL/tick /$ 。"
+    },
+    {
+      "type": "text",
+      "text": "另一影响机械产出效率的因素是$(l:base_concepts/heat)热量/$。这个机械需要散热，当温度逐渐升高效率逐渐会降低，直至没有任何空气产出。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个$(item)电力压缩机/$",
+      "recipe": "pneumaticcraft:electric_compressor"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "创造模式压缩机",
+  "icon": "pneumaticcraft:creative_compressor",
+  "category": "compressors",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)创造模式压缩机/$为一种不可制作的$(l:base_concepts/pressure)空气压缩机/$（废话）。$(p)仅需在它的GUI中选择特定的气压，它就会自动将系统内气压维持在指定水平。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:creative_compressor",
+      "text": "$(italic)配方？嘛玩意儿？/$"
+    }
+  ]
+}

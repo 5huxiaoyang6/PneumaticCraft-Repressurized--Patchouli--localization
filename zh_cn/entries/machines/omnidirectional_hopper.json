@@ -1,0 +1,28 @@
+{
+  "name": "全方向漏斗",
+  "icon": "pneumaticcraft:omnidirectional_hopper",
+  "category": "machines",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)全方向漏斗/$ 的工作方式几乎与原版的 $(item)漏斗/$ 一直. 然而, 这个漏斗可以朝向 $(italic)任意/$ 方向, 不仅仅朝上. 不仅如此, 它还支持添加 $(l:base_concepts/upgrades)升级/$, 以大大加快传输速度. 该漏斗拥有独特的碰撞箱, 因此你能够与漏斗后面的方块互动. 漏斗的工作不需要 $(l:base_concepts/pressure)压缩空气/$, 所以这是一个非常使用的游戏初期的设备."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:omnidirectional_hopper",
+      "text": "当你放置漏斗时, 它的 $(9)输入口/$ 将会朝向你, 并且它的 $(6)输出口/$ 会朝向你所瞄准的方块的面. 手持 $(l:tools/pneumatic_wrench)气动扳手/$ $(p)$(thing)右击/$ 漏斗 (其他的扳手也可能有用) 以调整输入口朝向. $(thing)潜行+右击/$ 漏斗以调整输出口朝向."
+    },
+    {
+      "type": "text",
+      "title": "发射器升级",
+      "flag": "pneumaticcraft:omniHopperDispenser",
+      "text": "如果 $(l:base_concepts/upgrades#dispenser)发射器升级/$ 被安装在 $(item)全方向漏斗/$ 内, 漏斗将会把物品直接从 $(6)输出口/$ 投掷到世界中 (如果没有容器接受物品).$(p)这使得其能作为改进版的 $(item)投掷器/$ : 更快, 更精准, 更易受 $(#f00)红石控制/$."
+    },
+    {
+      "type": "crafting",
+      "text": "制作全方向漏斗",
+      "recipe": "pneumaticcraft:omnidirectional_hopper"
+    }
+  ]
+}

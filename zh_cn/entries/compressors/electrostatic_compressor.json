@@ -1,0 +1,47 @@
+{
+  "name": "静电压缩机",
+  "icon": "pneumaticcraft:electrostatic_compressor",
+  "category": "compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)静电压缩机/$是一种使用雷电的能量来产生压缩空气的$(l:base_concepts/pressure_tiers)2级/$ $(l:base_concepts/pressure)空气压缩机/$。$(p)当它被雷电击中时会瞬间产生200,000mL的空气。看起来好像不少，但是你多久才能看见一只闪电苦力怕？你必须主动让其受到雷击。"
+    },
+    {
+      "type": "text",
+      "text": "要增加闪电击中的几率，你可以将铁栏杆与机械连接，铁栏杆将作为雷电的导体。$(p)关于搭建一个大铁栏杆$(thing)阵列/$的建议：铁栏杆可以最多在水平面搭建半径为5格（园的半径），5格向上或向下，但是他们必须与彼此相连或者与$(item)静电压缩机/$相连。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/electrostatic_compressor.png"
+      ]
+    },
+    {
+      "type": "text",
+      "text": "注意在左边的图片中，只有中间的压缩机有着围绕着它的最高效率的铁栏杆阵列。其他的压缩机被雷击的几率会小一些（尽管这样还是比只有中间一个静电压缩机效率要高）。"
+    },
+    {
+      "type": "text",
+      "text": "当多个$(item)静电压缩机/$在一个铁栏杆$(thing)阵列/$上时，一次雷击产生的空气由他们均分。$(p)为了防止过高气压时压缩机的爆炸，你可以把$(item)铁栏杆/$连接到压缩机的底面。这样能量可以消散到大地而不是留在机械里。"
+    },
+    {
+      "type": "text",
+      "text": "能量消散只会当机械处于危险气压的时候发生，机械很快就能达到危险气压。每一个$(italic)直接/$连在压缩机下面的$(item)铁栏杆/$可以散去10,000mL的多余气体(在同一Y坐标)。$(p)因此，当十个压缩机在同一个$(thing)阵列/$上时，每一个压缩机下方仅需要两个$(item)铁栏杆/$ $(ttcolor)$(t:200000 / 10 = 20000 空气 每个机械会产生的; 10000 x 2 = 20000 空气消散)(你也可以给机械安装$(l:base_concepts/upgrades#security)安全升级/$，但是这种方式又贵又低效)。 "
+    },
+    {
+      "type": "text",
+      "text": "你可以在压缩机$(italic)顶上/$搭最多10格的$(item)铁栏杆/$来形成一个$(thing)避雷针/$来增加雷击的几率。每一个避雷针会稍微增加被雷击的几率。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)注意:/$与之前版本的$(pncr)不同，自然生成的闪电$(italic)不会/$让静电压缩机工作（因为使用其他模组生成闪电太不要脸了）！取而代之的是机械会有几率生成一道\"虚假\"的闪电。生成闪电的几率在晴天$(italic)非常/$小，但是在$(thing)下雨天/$会好那么些，$(thing)雷暴/$天气则会有巨大的增幅。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个$(item)静电压缩机/$",
+      "recipe": "pneumaticcraft:electrostatic_compressor"
+    }
+  ]
+}

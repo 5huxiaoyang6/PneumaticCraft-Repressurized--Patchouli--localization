@@ -1,0 +1,50 @@
+{
+  "name": "充能站",
+  "icon": "pneumaticcraft:charging_station",
+  "category": "machines",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)充能站/$ 用来给气动的物品补充空气 (或排出空气). $(item)充能站/$ 与 $(l:base_concepts/pressure)气动/$ 物品之间的相互作用和管道与机器之间的相互作用一样: 不同的压力会被平衡. 这意味着你需要给 $(item)充能站/$ 充足的气压才能使其将物品充满."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:charging_station",
+      "text": "大部分可充能的物品的最大气压上限为10bar, 但不用担心爆照会发生. 物品不会因为输入过高的气压而爆炸, 只会充能到10bar及以下."
+    },
+    {
+      "type": "text",
+      "title": "充能平台",
+      "text": "你可以将充能站转变为 $(thing)充能台/$ , 通过为其添加 $(l:base_concepts/upgrades#dispenser)发射器升级/$ 实现. 这将会为任何以掉落物形式投掷在 $(item)充能站/$ 上的物品充能, 并且还能为站在 $(item)充能站/$ 上的玩家背包中的物品充能.$(p) $(thing)充能平台/$ 可以被 $(l:tools/camo_applicator)伪装喷涂器/$ 伪装."
+    },
+    {
+      "type": "text",
+      "title": "升级管理",
+      "text": "$(item)充能站/$ 还可以用来对物品的 $(l:base_concepts/upgrades)升级进行管理/$. 如需对物品进行升级, 将物品放入 $(item)充能站/$ , 并且点击位于物品槽上方的 $(thing)上箭头/$ 按钮. 新打开的GUI就是该物品的升级槽位, 每一个该物品可接受的升级会被排列在该GUI的周围."
+    },
+    {
+      "type": "relations",
+      "title": "可充能的物品",
+      "entries": [
+        "tools/air_canister",
+        "tools/pneumatic_wrench",
+        "tools/logistics_configurator",
+        "tools/camo_applicator",
+        "tools/vortex_cannon",
+        "tools/minigun",
+        "tools/drone",
+        "tools/manometer",
+        "armor/pneumatic_helmet",
+        "armor/pneumatic_chestplate",
+        "armor/pneumatic_leggings",
+        "armor/pneumatic_boots"
+      ]
+    },
+    {
+      "type": "crafting",
+      "text": "制作充能站",
+      "recipe": "pneumaticcraft:charging_station"
+    }
+  ]
+}

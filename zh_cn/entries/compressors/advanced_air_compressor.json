@@ -1,0 +1,17 @@
+{
+  "name": "高级空气压缩机",
+  "icon": "pneumaticcraft:advanced_air_compressor",
+  "category": "compressors",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)高级空气压缩机/$是一种最大安全气压为20bar的$(l:base_concepts/pressure_tiers)2级/$$(l:compressors/air_compressor)空气压缩机/$。它能50ml/tick的速度为$(ttcolor)$(t:能通过安装速度升级增加)基础/$生成空气，而且能通过安装$(l:base_concepts/upgrades#speed)速度升级/$来进一步提升。$(p)然而，这个机械需要$(l:base_concepts/heat)冷却/$，它的效率会随着温度升高而减低，直到完全不产生空气！"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个$(item)高级空气压缩机/$",
+      "recipe": "pneumaticcraft:advanced_air_compressor"
+    }
+  ]
+}

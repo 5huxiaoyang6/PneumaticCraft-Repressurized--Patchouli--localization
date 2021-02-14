@@ -1,0 +1,51 @@
+{
+  "name": "空气接口",
+  "icon": "pneumaticcraft:aerial_interface",
+  "category": "machines",
+  "advancement": "pneumaticcraft:advanced_pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)空气接口/$ 是极其强大的设备, 能够连接玩家的背包库存. 当给予了足够的 $(l:base_concepts/pressure)气压/$, 它能够像其他容器一样进行交互. 然而物品不再是存储到设备的库存内, 而是会 $(italic)直接/$ 转移到玩家的背包. 例你可以在该设备上安装 $(l:logistics/frames#requester)物流请求框架/$ 以维持背包中始终存在64个火把."
+    },
+    {
+      "type": "text",
+      "text": "默认情况下, 你的库存可以被空气接口的四周所处的面访问, 而盔甲槽则是顶部/底部访问. 但是, 这些都是可以在 $(bold)侧面配置/$ 选项卡的GUI中修改. $(p)你能配置任何一个面与以下内容连:$(li)玩家物品栏$(li)盔甲槽$(li)副手槽$(li)末影库存 (原版的 $(item)末影箱/$)."
+    },
+    {
+      "type": "text",
+      "title": "水下呼吸",
+      "text": "显然, 我们通过消耗 $(l:base_concepts/pressure)压缩空气/$来连接接口与玩家, 因此我们可以在必要的时候将空气用到其他地方,对吗? 通过消耗 80mL/tick的压缩空气, 你能无限制的在水下呼吸.$(p)这比穿戴 $(l:armor/pneumatic_helmet)气动头盔/$ 并且安装了 $(l:base_concepts/upgrades#scuba)SCUBA 升级/$ 所带来的水下呼吸更有效率, 但不能像头盔那样提供清晰的水下视野."
+    },
+    {
+      "type": "text",
+      "title": "与Forge能量的交互",
+      "text": "$(item)空气接口/$ 支持 $(thing)Forge能量/$ (包括RF以及其他模组提供的能量). 能量会被储存在缓存区 (100,000) 并且用于给玩家物品栏中能接收RF的物品充能 (包括盔甲槽)."
+    },
+    {
+      "type": "text",
+      "title": "自动喂食",
+      "text": "通过添加 $(l:base_concepts/upgrades#dispenser)发射器升级/$ 能够使 $(item)空气接口/$ 拥有自动喂食功能. 只有食物能够被接口接收, 并且你的饥饿值能完全的消耗所提供的饱食度时才进行工作. 注意,如果提供的食物的堆叠数 >1, 接口会保持等待状态直到玩家的饥饿值能够完全的接收所提供的饱食度的和. 为了能减缓投递速度并确保能够最高效的利食物, 建议配合 $(item)漏斗/$ 使用."
+    },
+    {
+      "type": "text",
+      "title": "经验交互",
+      "text": "通过添加$(l:base_concepts/upgrades#dispenser)发射器升级/$ 允许其他模组提供的 $(thing)液体经验/$ 通过接口传入给玩家或将玩家的经验以流的方式抽出. 当存在多种流经验时, 你能够在$(bold)经验/$ 选项卡的GUI中选择所需要的种类.  在选项卡中只会出现能被检测到的并且可用的流经验."
+    },
+    {
+      "type": "text",
+      "title": "经验交互 (续)",
+      "text": "注意, 接口本身不提供流的缓存区, 而是直接使用玩家的经验槽作为'容器'. 这意味着，当导入或泵出流体经验时为了能全速运行, 你需要一个流转运设备能够超过流经验与经验转换的速率. 在写该内容时, 所有已知的转换速率是 20mB/tick ."
+    },
+    {
+      "type": "text",
+      "title": "自动充气",
+      "text": "通过放置 $(l:tubes/charging_module)充气模块/$ 并指向 $(item)空气接口/$, 能够给你物品栏中能够 $(base_concepts/pressure)增压/$ 的物品充气.$(p)注意, 如果想要给 $(l:armor/overview)P气动盔甲/$ 充气, 充气模块必须指向连盔甲槽的面."
+    },
+    {
+      "type": "crafting",
+      "text": "制作空气接口",
+      "recipe": "pneumaticcraft:aerial_interface"
+    }
+  ]
+}
