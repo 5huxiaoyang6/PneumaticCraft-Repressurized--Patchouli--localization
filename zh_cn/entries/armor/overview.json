@@ -1,0 +1,55 @@
+{
+  "name": "装甲速览",
+  "icon": "minecraft:written_book",
+  "category": "armor",
+  "priority": "true",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "如果你把$(pncr)和$(thing)钢铁侠/$中的HUD混合在一起会怎么样？你会得到$(thing)气动装甲/$！$(p)虽然这套盔甲的灵感来自于托尼-斯塔克的玩具，但这并不意味着它在任何方面都是无敌的：默认情况下，这套盔甲的保护和耐用性只比同等的$(thing)铁套/$稍好。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/pneumatic_armor.png"
+      ],
+      "border": "true",
+      "text": "压缩钢铁侠！"
+    },
+    {
+      "type": "text",
+      "text": "然而，这种装甲是高度可升级的。要使用升级(并给装甲加压)，请将装甲放入$(l:machines/charging_station)充气站/$。$(p)所有部件通用的升级在下面的页面中描述。特定部件的升级将在每个装甲部件的页面中单独描述。"
+    },
+    {
+      "type": "text",
+      "text": "当你装备一件装甲时，它会在几秒钟内$(thing)$启动/$。你可以按$(thing)$(k:pneumaticcraft.armor.options)/$来打开一个GUI，它允许你配置已安装的升级和调整装甲HUD。随着安装了更多的升级，GUI中会出现更多的选项。$(p)注意，所有的升级都可以通过GUI复选框开启/关闭，你甚至可以在GUI之外的时候给每个复选框绑定一个键来快速切换功能。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:speed_upgrade",
+      "text": "$(l:base_concepts/upgrades#speed)速度升级/$减少了每件装甲的启动时间。此外，它们还减少了$(l:armor/pneumatic_helmet)头盔/$ 的 $(l:base_concepts/upgrades#entity_tracker)实体追踪器/$和$(l:base_concepts/upgrades#block_tracker)方块追踪器/$ 的锁定时间，并增加了$(l:armor/pneumatic_leggings)护腿/$ 的运行速度，但是有$(l:base_concepts/pressure)气体消耗/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:volume_upgrade",
+      "text": "$(l:base_concepts/upgrades#volume)容积升级/$增加每个装甲的$(l:base_concepts/pressure)储气能力/$，使它们的充气时间更长，但使用时失去气压的速度更慢。升级数量的唯一限制是各个装甲的可用升级槽数量。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:armor_upgrade",
+      "text": "$(l:base_concepts/upgrades#armor)护甲升级/$增加每件装甲的防护和韧性。安装2次升级后，每件铠甲与对应的$(thing)钻石甲/$一样好。 最多升级6次，因此防护力优于$(thing)钻石甲/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:item_life_upgrade",
+      "text": "$(l:base_concepts/upgrades#item_life)物品寿命升级/$ 花费$(base_concepts/pressure)空气/$ 缓慢修复装甲。每个护甲最多可以安装6个升级，提供递增的快速（但空气利用效率较低）修复。"
+    },
+    {
+      "type": "text",
+      "title": "Thaumcraft",
+      "flag": "mod:thaumcraft",
+      "text": "$(l:base_concepts/upgrades#thaumcraft)神秘升级/$ 为护甲提供相应 $(thing)神秘使套装/$ 的等效vis减免。 此外，安装在 $(l:armor/helmet)头盔/$ 中的神秘升级充当 $(thing)揭示护目镜/$，在容器中显示$(thing)灵气节点/$ 并显示$(thing)要素/$ 数量。"
+    }
+  ]
+}

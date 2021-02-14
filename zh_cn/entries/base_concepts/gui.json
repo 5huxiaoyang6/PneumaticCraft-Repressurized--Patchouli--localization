@@ -1,0 +1,27 @@
+{
+  "name": "GUI 概念",
+  "icon": "minecraft:paper",
+  "category": "base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "在 $(pncr) 中大多数机械有带着几个$(thing)标签/$的GUI。一些标签基本上所有机械都有，而另一些只有特定的机械才会拥有。下面是常见标签的列表："
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(bold)红石行为/$：这里你可以选择机械满足红石信号时做何动作 或 满足条件时做出如何的红石行为。$(li)$(bold)信息 /$：信息标签写了关于机械用途的固定信息。$(li)$(bold)升级 /$：这里你可以看所有机械可以安装的升级以及升级在这个机械中的作用。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(bold)压力状况（气压）/$: 这里你可以看见机械当前的气压和内容气体量。$(li)$(bold)存在问题 /$：如果机械不工作，这个标签会指出当前错误发生的地方。"
+    },
+    {
+      "type": "image",
+      "text": "有着三个标签的GUI：气压，存在问题（这里没有），装配控制器的状况",
+      "images": [
+        "pneumaticcraft:textures/wiki/gui_tabs.png"
+      ],
+      "border": "false"
+    }
+  ]
+}

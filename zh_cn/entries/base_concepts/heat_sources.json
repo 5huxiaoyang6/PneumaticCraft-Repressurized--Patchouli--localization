@@ -1,0 +1,45 @@
+{
+  "name": "热源",
+  "icon": "pneumaticcraft:vortex_tube",
+  "category": "base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)固定热源/$ 是提供或吸收毗邻机械的方块或流体。当吸收或者提供了过多的热量，它们也许会转变为另外一种方块或流体。需要注意的热量的提取和增加时从外部记录到相关方块的，所以打掉方块再放下来并不是一个明智的做法。"
+    },
+    {
+      "type": "text",
+      "title": "原版的热源",
+      "text": "这些原版的方块或流体会作为固定热源：$(li)空气$(li)冰$(li)浮冰$(li)雪$(li)火把$(li)火 (会熄灭)$(li)岩浆块 (冷却变成地狱砖)$(li)水 (会冻住或蒸发)$(li)熔岩 (冷却)"
+    },
+    {
+      "type": "text",
+      "title": "模组热源",
+      "text": "一些模组中的方块也会作为具有不同属性的固定热源工作，包括：$(li)IC2 蒸汽和过热蒸汽$(li)IC2 冷却液和热冷却液$(li)IC2 以及 Immersive Engineering 铀块$(li)Quark 烈焰灯$(li)Quark 硫黄石 和 永冻石$(li)Natura 热沙$(li)所有模组中具有温度属性的流体 (温度是模组自己定的)"
+    },
+    {
+      "type": "text",
+      "title": "添加自定义热源",
+      "text": "(主要为整合包作者服务)$(thing)config/pneumaticcraft/BlockHeatProperties.cfg/$ 中可以自定义游戏中几乎所有的方块和流体的热量属性。你可以随便编辑这个JSON文件（虽然是个cfg，但是格式其实是json文件的，译者注），更改将不会被模组更新所覆盖（但可能添加新的条目）。你可以删除那个文件来强制性的“恢复出厂设置” 。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:vortex_tube",
+      "text": "$(l:machines/vortex_tube)涡流管/$是一个将$(l:base_concepts/pressure)气压/$直接转化为热量的可变$(thing)可变热源/$。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_frame",
+      "text": "$(l:semiblocks/heat_frame)导热框架/$ 是一个用来加热或冷冻库存物品的工具。需要注意导热框架不会直接从 $(thing)固定热源/$ 中吸收热量，但你可以在它们旁边放一个$(l:base_concepts/basic_materials#compressed_iron_block)压缩铁块/$来传导热量。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:heat_sink",
+      "text": "A $(l:machines/heat_sink)散热片/$ 是一个方块，它可以将接触的方块的热量（或热或冷）传递至空气中。"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)加热一个熔炉/$$(p)当 $(item)熔炉/$ 连接至任何一个可变热源（像是$(l:machines/vortex_tube)涡流管/$；$(l:compressors/advanced_air_compressor)高级空气压缩机/$），热量将被熔炉消耗去充当“燃料”。温度越高熔炉烧制地越快。多个热源的效果可以叠加。熔炉的烧制会在温度100℃时开始。"
+    }
+  ]
+}

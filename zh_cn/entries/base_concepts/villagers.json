@@ -1,0 +1,17 @@
+{
+  "name": "技工村民",
+  "icon": "minecraft:emerald",
+  "category": "base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "你对囤积了一些稀有 $(pncr) 部件的$(thing)村民/$有所耳闻。看来他是偶然进入了$(l:manufacturing/pressure_chamber)压力室？/$"
+    },
+    {
+      "type": "entity",
+      "name": "技工",
+      "entity": "minecraft:villager{ProfessionName:'pneumaticcraft:mechanic'}",
+      "text": "$(italic)并不是$(l:tools/amadron_tablet)Amadron/$$(italic)的粉丝$"
+    }
+  ]
+}

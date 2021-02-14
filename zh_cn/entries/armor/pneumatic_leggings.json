@@ -1,0 +1,38 @@
+{
+  "name": "气动护腿",
+  "icon": "pneumaticcraft:pneumatic_leggings",
+  "category": "armor",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+
+    {
+      "type": "text",
+      "text": "$(item)气动护腿/$是四件$(thing)气动护甲/$的其中之一"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pneumatic_leggings",
+      "text": "制作一个气动护腿"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:speed_upgrade",
+      "text":  "除了减少装甲的初始化时间，腿甲中的$(l:base_concepts/upgrades#speed)速度升级/$ 还有一个更重要的效果：它们会增加你的$(thing)奔跑速度/$, 但是会消耗$(l:base_concepts/pressure)压力/$。最多可以安装4个速度升级。"
+    },
+    {
+      "type": "text",
+      "title": "速度升级(续.)",
+      "text": "护甲GUI可以随时改变速度提升的效果，如果你想改变速度，不需要找$(l:machines/charging_station)充气站/$移除升级"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:range_upgrade",
+      "text": "$(l:base_concepts/upgrades#range)范围升级/$可以为你增加跳跃能力，但需要花费少量的压力。最多可以安装6个范围升级.$(p)按住$(thing)$(k:key.sneak)/$会降低跳跃高度，相当于一次升级。"
+    },
+    {
+      "type": "text",
+      "title": "范围升级(续.)",
+      "text": "护甲GUI可以随时改变跳跃提升的效果，如果你想改变跳跃高度，不需要找$(l:machines/charging_station)充气站/$移除升级"
+    }
+  ]
+}

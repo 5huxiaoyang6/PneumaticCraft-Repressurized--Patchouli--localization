@@ -1,0 +1,37 @@
+{
+  "name": "气动靴子",
+  "icon": "pneumaticcraft:pneumatic_boots",
+  "category": "armor",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)气动靴子/$是四件$(thing)气动装甲/$之一.$(p)靴子以适度的气体消耗(与所抵消的摔落伤害成正比)提供内置的摔落保护.$(p)你还可以免费获得自动上一格高的能力(无气费)。 请注意，这是步行辅助，而不是自动跳跃，而且这是一个可开关的功能。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pneumatic_boots",
+      "text": "制作一个气动靴子"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:jet_boots_upgrade",
+      "text": "如果你曾经想毫无顾忌地（除了你还有多少气压）在空中翱翔，$(l:base_concepts/upgrades#jet_boots)喷射鞋升级/$就是为你准备的。 你最多可以增加10次升级，以逐步提高飞行速度，和更大的空气使用率。$(p)"
+    },
+    {
+      "type": "text",
+      "title": "喷射鞋（续）",
+      "text": "(thing)喷射鞋/$ 是一个 气体消耗的$(bold)大头/$ ;强烈建议为你的靴子增加多个$(l:base_concepts/upgrades#volume)容积升级/$(和有$(l:base_concepts/upgrades#charging)充气升级/$ 的 $(l:armor/pneumatic_chestplate)气动胸甲/$)。 $(p)在可能的情况下，你的基地有良好的充气基础设施时，还建议使用$(l:machines/aerial_interface)空气接口/$"
+    },
+    {
+      "type": "text",
+      "title": "喷射鞋（续）",
+      "text": "安装了8个或更多$(l:base_concepts/upgrades#jet_boots)喷射鞋升级/$后，你还可以进入$(thing)创造飞行模式/$，这可以让你进行更有创造风格的飞行控制(但速度较慢)，并提高空中挖掘速度。这可以通过装甲GUI开启&关闭(或绑定到一个切换键来控制)。"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:dispenser_upgrade",
+      "text":  "通过在靴子上添加最多4个$(l:base_concepts/upgrades#dispenser)发射器升级/$，你能获得发动 $(bold)气动踢/$ 的能力。 这将对实体(不仅仅是生物实体!)造成中等程度的伤害，同时也会造成可观的击退，代价是适度的气体消耗。$(p)按$(thing)$(k:pneumaticcraft.boots.kick)/$来踢。"
+    }
+  ]
+}

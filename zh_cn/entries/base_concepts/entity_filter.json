@@ -1,0 +1,45 @@
+{
+  "name": "实体过滤器",
+  "icon": "minecraft:skull:3",
+  "category": "base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)实体过滤器/$ 在 $(pncr) 中有几处应用，用于特定机械和工具要对哪个$(thing)实体/$产生某种影响。$(p)在大多数过滤器可以键入的地方，可以按 $(thing)F1/$ 键来调出提示。"
+    },
+    {
+      "type": "text",
+      "text": "要指定一个特定的实体，不管它是属于一个相同的类型('Creepers')，还是有相同的名字(一个叫 'MineMaarten' 的玩家)，用实体的名字就行。$(p)当你想指定某个实体 $(italic)类型/$ 就在其前面加个‘@’号(有 animals, aggressive mobs, players 一般来说)。 完整的例子列表，包括可以$(thing)@的东西/$ 在下一页。"
+    },
+    {
+      "type": "text",
+      "title": "例子",
+      "text": "$(li)$(#800)@player/$ 匹配所有玩家$(li)$(#800)@mob/$ 匹配所有生物$(li)$(#800)@animal/$ 匹配所有被动型生物 (animals)$(li)$(#800)@animal(age = adult)/$ 匹配所有成年动物$(li)$(#800)@animal(age = baby)/$ 匹配所有幼年动物$(li)$(#800)@animal(breedable = yes)/$ 匹配能够被喂养的被动型生物$(li)$(#800)@minecart/$ 匹配矿车"
+    },
+    {
+      "type": "text",
+      "title": "例子（续表）",
+      "text": "$(li)$(#800)@boat/$ 匹配船$(li)$(#800)@living/$ 匹配所有生物类型$(li)$(#800)@item/$ 匹配物品实体$(li)$(#800)@drone/$ 匹配 $(l:tools/drone)无人机/$$(li)$(#800)Creeper/$ 匹配爬行者$(li)$(#800)MineMaarten/$ 匹配名为“MineMaarten”的实体$(li)$(#800)c*/$ 匹配任意一个带有字符“c”的实体(比如 Creepers或者Cows). $(li)$(#800)*pig*/$ 匹配任意一个带有单词“pig”的实体(比如Pig或Zombie Pigman)。"
+    },
+    {
+      "type": "text",
+      "text": "所有匹配的不分大小写字母, 比如，这两个 $(#800)zombie/$  $(#800)Zombie/$ 都匹配的是僵尸$(p)你可以指定 $(thing)一系列/$ 的过滤用‘;’（半角的分号）隔开。 这是一个$(italic)匹配任意/$的函数（表达式）：$(li)$(#800)creeper;zombie/$ 匹配 爬行者 $(italic)和/$ 僵尸。"
+    },
+    {
+      "type": "text",
+      "text": "你可以在过滤器前加上'!'来反向设定这个过滤器：$(li)$(#800)!@player/$ 匹配任何$(italic)不是/$ 玩家的实体 $(li)$(#800)!Creeper;Zombie/$ 匹配任何$(italic)不是/$爬行者 和 僵尸 的实体 $(li)$(#800)Creeper;!Zombie/$ 是 $(f00)无效的/$ ：'!' 只能放在过滤器的开端 /$$(p)$(bold)注：/$ 对于使用$(l:programming/text)文本/$ 编程工具的$(l:tools/drone)无人机/$ 的实体过滤器来说 , '!'并不支持； 像往常一样把文字编程工具拼在左边来运作。"
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "tools/micromissiles",
+        "tubes/air_grate_module",
+        "armor/pneumatic_helmet",
+        "machines/sentry_turret",
+        "machines/universal_sensor",
+        "programming/text"
+      ],
+      "text": "$(italic)能用实体过滤器的机械和工具/$"
+    }
+  ]
+}

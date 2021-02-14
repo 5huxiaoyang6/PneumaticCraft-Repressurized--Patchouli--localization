@@ -1,0 +1,37 @@
+{
+  "name": "热量",
+  "icon": "minecraft:blaze_powder",
+  "category": "base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(pncr) 添加了 $(thing)热量/$ 系统。其会让热量从一个方块传递到另一个方块像是现实中那样。热量传递与$(base_concepts/pressure)气压传递/$有相似之处：$(li)热量会从热的物体传递向冷的物体。$(li)方块指挥向相邻的可导热的方块传递热量(详情见 $(l:base_concepts/heat_sources)热源/$)。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)温差越大，热量传导也会越快。$(li)不同物体有着不同的$(thing)热阻/$。 $(item)火把/$ 以及 $(item)空气/$ 有着很高的热阻，然而$(l:base_concepts/basic_materials#compressed_iron_block)压缩铁块/$ 却有着极低的热阻。$(thing)热阻/$ 决定热量在物体之间的传递能有多快。"
+    },
+    {
+      "type": "text",
+      "text": "$(li)不同物体有着不同的$(thing)热容/$。 热容越高，提供热量时物体升温就越慢。同样地，物体向外传递热量时，降温也会越慢。换而言之，高热容的方块需要更多的$(thing)热量/$来提升 $(thing)温度/$ ，但降温也会越慢。"
+    },
+    {
+      "type": "text",
+      "title": "隔热",
+      "anchor": "insulation",
+      "text": "如果有暴露在空气中的面，机械会向空气散热。 对有很多面的$(l:manufacturing/refinery)燃油精炼机/$来说需要格外地注意，还有包括$(l:base_concepts/basic_materials#compressed_iron_block)压缩铁块/$在内的导热方块都需要注意这点。$(p)要避免热量损失，就要确保没有面暴露在空气里。任何非导热方块都可以起到隔绝的效果。甚至它们都不需要是一个完整的方块—— $(item)活板门/$ 以及 $(item)台阶/$就很好。"
+    },
+    {
+      "type": "text",
+      "title": "热源",
+      "text": "一些 $(pncr) 中的机械产生需要散去的热量，又有一些需要热量来工作。$(p)因此，你需要$(l:base_concepts/heat_sources)找到法子/$去操控这些机械的热量……"
+    },
+    {
+      "type": "spotlight",
+      "flag": "mod:toughasnails",
+      "title": "Tough As Nails",
+      "item": "toughasnails:thermometer",
+      "text": "当 $(l:https://minecraft.curseforge.com/projects/tough-as-nails)意志坚定/$ 安装时，你需要特别注意 $(pncr) 中机械和方块的冷热，因为它们会对你的体温造成影响！$(p)$(l:base_concepts/heat#insulation)隔热的/$ 方块不会有太明显的冷热效果。"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+    "name": "基础材料",
+    "icon": "pneumaticcraft:ingot_iron_compressed",
+    "category": "base_concepts",
+    "pages": [
+        {
+            "type": "text",
+            "text": "$(pncr) 并没有在地下生成额外的矿物。 你需要一些 $(item)铁锭/$ 转化为$(item)压缩铁锭$() 来开始，其在整个模组的合成中都会用到。$(p)要转化铁锭，先将$(item)铁锭/$扔在地上，然后再附近引发一次爆炸。$(item)TNT/$ 能实现转化，不过许多其他爆破物引起的爆炸同样起效。"
+        },
+        {
+            "type": "image",
+            "images": [
+                "pneumaticcraft:textures/patchouli/compressed_iron.png"
+            ],
+            "text": "$(italic)      退后一些/$"
+        },
+        {
+            "type": "spotlight",
+            "anchor": "compressed_iron_ingot",
+            "item": "pneumaticcraft:ingot_iron_compressed",
+            "text": "警告：作为爆炸负面效果，你将会损失大约20%的铁锭。如果想避免它，你需要在$(l:manufacturing/pressure_chamber)压力室/$中制作$(item)压缩铁锭/$ 。然而$(thing)压力室/$本身需要消耗$(item)压缩铁锭/$去合成，所以一些些的额外损耗是不可避免地。"
+        },
+        {
+            "type": "pneumaticcraft:pressure_chamber",
+            "item": "pneumaticcraft:ingot_iron_compressed"
+        },
+        {
+            "type": "crafting",
+            "anchor": "compressed_iron_block",
+            "recipe": "pneumaticcraft:compressed_iron_block",
+            "text": "$(item)压缩铁块/$ 是一种优良地 $(l:base_concepts/heat)热导体/$ ，它可以用于提供更多地接触面放置 $(l:machines/heat_sink)散热片/$ 来为会发热的机械服务。"
+        },
+        {
+            "type": "pneumaticcraft:pressure_chamber",
+            "item": "pneumaticcraft:compressed_iron_block"
+        }
+    ]
+}

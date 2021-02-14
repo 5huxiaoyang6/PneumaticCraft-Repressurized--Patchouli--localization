@@ -1,0 +1,31 @@
+{
+  "name": "石油",
+  "icon": "forge:bucketfilled{FluidName:'oil',Amount:1000}",
+  "category": "base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "在 $(pncr) 模组中，唯一会世界生成的资源就是$(thing)石油/$。石油会像原版水池一样生成，不同的是，石油大多数会生成在地下深处而不是地表。因此这里极力推荐$(l:tools/seismic_sensor)地下石油探测器/$帮助你寻找石油。"
+    },
+    {
+      "type": "text",
+      "text": "石油有两个用途：一是$(l:manufacturing/refinery)精炼/$成高质量的燃料，可用于$(l:compressors/liquid_compressor)液体压缩机/$。二是用于制造$(l:components/plastic)塑料/$和$(l:components/lubricant)润滑油/$。$(p)$(item)塑料/$在$(pncr)的许多配方中使用，$(item)润滑油/$是制作$(l:base_concepts/upgrades#speed)速度升级/$所需要的。"
+    },
+    {
+      "type": "text",
+      "text": "一旦你找到了一些油，你就需要提取和运输它。推荐的$(pncr)提取石油的方法是用$(l:machines/gas_lift)气举/$，尽管也可以使用其他模组的液体泵。如果你要在离基地很远的地方抽油，一个早期游戏的运输解决方案是一个简单的$(l:machines/liquid_hopper)流体漏斗/$，它最多可以容纳16,000mB的液体，并且在破损时保持其内部液体。(即使是气举也可以用于此目的，因为它也会保留其内部液体)。"
+    },
+    {
+      "type": "image",
+      "images": [
+          "pneumaticcraft:textures/patchouli/oil_pumping.png"
+      ],
+      "text": "$(italic)用气举抽石油并自动弹射到液体漏斗中。/$"
+    },
+    {
+      "type": "text",
+      "title": "模组联动",
+      "text": "$(pncr)当然不是唯一一个添加$(thing)石油/$的mod；其他几个模组也添加了石油（包括$(thing)BuildCraft/$和$(thing)Immersive Petroleum/$）.$(p)根据你的世界生成设置，$(pncr)Oil可能不生成；然而，$(l:manufacturing/refinery)精炼机/$能够处理来自其他mod的 \"石油\"液体。"
+    }
+  ]
+}

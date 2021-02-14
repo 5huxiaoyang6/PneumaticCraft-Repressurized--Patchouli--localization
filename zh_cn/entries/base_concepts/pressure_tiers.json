@@ -1,0 +1,15 @@
+{
+  "name": "气压等级",
+  "icon": "pneumaticcraft:advanced_pressure_tube",
+  "category": "base_concepts",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(pncr)目前气动机器有两个$(thing)等级/$：$(p)$(li)$(thing)一级/$机器理论上能够承受5bar的压力.$(li)$(thing)二级/$机器可以承受高达20bar的压力。"
+    },
+    {
+      "type": "text",
+      "text": "注意，$(thing)bar/$所使用的$(pncr)表示压力$(bold)高于/$正常大气压，所以0bar是未加压的空气，-1bar是真空。"
+    }
+  ]
+}

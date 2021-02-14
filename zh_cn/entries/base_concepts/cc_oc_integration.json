@@ -1,0 +1,108 @@
+{
+  "name": "Computer兼容",
+  "icon": "pneumaticcraft:textures/patchouli/computer.png",
+  "category": "base_concepts",
+  "flag": "|mod:computercraft,mod:opencomputers",
+  "pages": [
+    {
+      "type": "text",
+      "text": "当 $(thing)ComputerCraft/$ 或 $(thing)Open Computers/$ 被安装了, 你可以用其来操纵 $(pncr) 设备和 $(l:machines/drone_interface)无人机/$.$(p)这里列出的设备都可以和 CC/OC 的外设进行交互."
+    },
+    {
+      "type": "text",
+      "title": "ComputerCraft",
+      "text": "在 Lua 中, 你可以运行 $(thing)m = peripheral.wrap(<side>)/$, $(thing)<side>/$ 是电脑的外设与设备连接的面 (top, bottom, left, right, back, front). 你可以用 $(thing)m.<functionName>/$ 来运行以下的任何功能.$(p)在以下程序中出现的所有的 '<side>' 的地方 'up', 'down', 'north', 'south', 'east', 'west' 都是有效的.",
+      "flag": "mod:computercraft"
+    },
+    {
+      "type": "text",
+      "title": "Open Computers",
+      "text": "你需要使用 $(item)适配器/$ 来将电脑与 $(pnc) 设备连接; 然后它们将显示为 OC 的组件, 你可以在 OC 的 Lua 环境下运行 $(thing)=component.list()/$ 来查看. 接下来的所有功能 OC 都可以运行, 例如 $(thing)p = component.air_compressor.getPressure()/$ 将会检索现在连接者的 $(item)空气压缩机/$ 的压力.",
+      "flag": "mod:opencomputers"
+    },
+    {
+      "type": "text",
+      "title": "通用方法",
+      "text": "接下来的方法通用与 $(italic)所有的/$ $(pncr) 设备:$(li)$(#800)getPressure(), getPressure(<side>)/$: 获取设备的压力. <side> 是可选的, 仅对 $(l:machines/vacuum_pump)真空泵/$ 有效, 因为它不同的面有不同的压力.$(li)$(#800)getDangerPressure()/$: 获得设备有爆炸风险的危险压力$(li)$(#800)getCriticalPressure()/$: 获得设备必定会爆炸的压力"
+    },
+    {
+      "type": "text",
+      "title": "热量相关方法",
+      "text": "下面的方法通用与 $(italic)所有/$ 支持 $(l:base_concepts/heat)热量/$ 的 $(pncr) 设备:$(li)$(#800)getTemperature(), getTemperature(<side>)/$: 获得设备的温度. <side> 是可选的, 仅对 $(l:machines/vortex_tube)涡流管/$ 有效, 因其不同的面有不同的温度."
+    },
+    {
+      "type": "spotlight",
+      "anchor": "air_cannon",
+      "item": "pneumaticcraft:air_cannon",
+      "text": "$(li)$(#800)setExternalControl(<true/false>)/$: 当为 true 时, 大炮将无法用通常的方法进行旋转 (放入定位工具, 放入范围升级改变..)$(li)$(#800)setTargetLocation(<x>,<y>,<z>)/$: 将大炮对准给定的目标位置, 而不是存储在定位工具中的位置."
+    },
+    {
+      "type": "text",
+      "title": "空气炮 (续)",
+      "text": "$(li)$(#800)setRotationAngle(<angle>)/$: 设定大炮的旋转角度.$(li)$(#800)setHeightAngle(<angle>)/$: 设定大炮的高度角.$(li)$(#800)isDoneRotating()/$: 当大炮旋转完毕时返回 True.$(li)$(#800)getMinWorkingPressure()/$: 获取大炮开火的最低气压需求 (GUI中黄到绿色的阈值)."
+    },
+    {
+      "type": "text",
+      "title": "空气炮 (续)",
+      "text": "$(li)$(#800)fire()/$: 当提供了足够的压力并且放入了物品, 大炮就会开火. 开火成功返回 True."
+    },
+    {
+      "type": "spotlight",
+      "anchor": "elevator",
+      "item": "pneumaticcraft:elevator_base",
+      "title": "电梯",
+      "text": "$(li)$(#800)setExternalControl(<true/false>)/$: 当为 True 时, 将电梯的控制模式由 $(#f00)红石模式/$ 转为'电梯呼叫器'模式, 这个模式接受电脑的控制. 你不必先于 $(#800)setTargetHeight()/$ 使用该方法; 那个方法会将电梯自动转换为外部控制模式."
+    },
+    {
+      "type": "text",
+      "title": "电梯 (续)",
+      "text": "$(li)$(#800)getMinWorkingPressure()/$: 获取电梯运行的最低气压需求. 电梯下降是无空气消耗的.$(li)$(#800)setTargetHeight(<height>)/$: 设置电梯的目标高度 (1米/方块, 浮点数).$(li)$(#800)getTargetHeight()/$: 获取电梯的目标高度 (1米/方块, 浮点数).$(li)$(#800)getCurrentHeight()/$: 获得电梯当前的高度 (1米/方块, 浮点数)."
+    },
+    {
+      "type": "spotlight",
+      "anchor": "plastic_mixer",
+      "item": "pneumaticcraft:plastic_mixer",
+      "text": "$(li)$(#800)selectColor(<colorIndex>)/$: 设置塑料颜色为 <colorIndex>, 范围是1-16. 使用 $(#800)selectColor(0)/$ 来取消颜色选择."
+    },
+    {
+      "type": "spotlight",
+      "anchor": "universal_sensor",
+      "item": "pneumaticcraft:universal_sensor",
+      "text": "$(li)$(#800)getSensorNames()/$: 返回传感器可用的功能名.$(li)$(#800)getSensor()/$: 返回传感器当前的功能名."
+    },
+    {
+      "type": "text",
+      "title": "万能传感器 (续)",
+      "text": "$(li)$(#800)setSensor(<sensorName>), setSensor(<index>), setSensor()/$: 设置当前传感器的功能. <sensorName> 必须是 $(#800)getSensorNames()/$ 返回的功能名之一. <index> 是 $(#800)getSensorNames()/$ 返回的功能名的顺序次序. 当使用空值 $(#800)setSensor()/$, 将不会选择任何传感器功能 (机器处于闲置状态, 并且不使消耗空气). 如果选择的功能是当前插入的升级可以使用的, 则返回 True. "
+    },
+    {
+      "type": "text",
+      "title": "万能传感器 (续)",
+      "text": "$(li)$(#800)setTextField(<text>)/$: 一些传感器功能需要输入文本来设定其他选项 (例如, 'Entities in range' 功能需要输入 $(l:base_concepts/entity_filter)实体过滤字符/$). 你可以在这里指定所需要的文本.$(li)$(#800)getTextField()/$: 返回当前存储在 $(thing)万能传感器/$ 内文本."
+    },
+    {
+      "type": "text",
+      "title": "万能传感器 (续)",
+      "text": "$(li)$(#800)isSensorEventBased()/$: 有两类传感器功能: 基于事件触发和轮询触发. 事件触发类会等待某一事件的发生 (玩家攻击, 拾取物品等). 轮询触发会定期检测状态 (范围内实体, 世界时间, 下雨传感). 如果选择的功能是基于事件触发类的则返回 True."
+    },
+    {
+      "type": "text",
+      "title": "万能传感器 (续)",
+      "text": "$(li)$(#800)getSensorValue()/$: 如果选择的是轮询触发, 将会返回其应当输出的红石信号强度值(non-inverted). 注意, 设置了传感器后不能立即获得输出结果, 因为许多轮询触发类功能出于性能原因会有较长时间的轮询间隔. 因此, 这个方法会立即触发一次轮询; 并获得结果. 如果选择的功能不是轮询类的, 则会抛出异常."
+    },
+    {
+      "type": "text",
+      "title": "万能传感器 (续)",
+      "text": "$(li)$(#800)getMinWorkingPressure()/$: 获得万能传感器工作的最低气压 (在 GUI 中为黄色和绿色之间的阈值).$(li)$(#800)setGPSToolCoordinate(<slotIndex>,<x>,<y>,<z>)/$: 将存储在传感器升级槽位 (从第一格开始) 中的定位工具的坐标修改为输入的坐标. 这对于使用位置的传感器功能很有用."
+    },
+    {
+      "type": "text",
+      "title": "万能传感器 (续)",
+      "text": "对于事件触发功能 (例如玩家右击传感器), 获取传感器值是基于事件的. 你可以通过 $(#800)<arguments> = os.pullEvent(\"universalSensor\")/$ 来获得值. 参数通常包含有 <eventName, redstoneStrength>. 玩家右击事件是个例外, 它的返回包含 <eventName, redstoneStrength, interactedX, interactedY, interactedZ>. 这可以用于实现一些有趣的东西..."
+    }
+  ]
+}
+
+
+
+

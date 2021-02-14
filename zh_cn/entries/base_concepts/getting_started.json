@@ -1,0 +1,16 @@
+{
+  "name": "让我们开始吧！",
+  "icon": "pneumaticcraft:textures/gui/gui_no_problem.png",
+  "category": "base_concepts",
+  "priority": "true",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(li)获得一些 $(thing)铁/$ 铁锭还是铁块都行。  你需要大概一组的铁锭来开端。$(li)将铁锭扔在地上，然后把它们炸掉。 没错！真的（认真脸）！$(li)收集爆炸后的产物 $(thing)压缩铁锭/$ （会比你扔掉的铁锭稍微少一点，作为损耗）。$(li)制作一些 $(l:tubes/pressure_tubes)压力管道/$。$(li)建造一个 $(l:manufacturing/pressure_chamber)压力室/$。"
+    },
+    {
+      "type": "text",
+      "text": "从现在开始，这本手册上的更多章节会根据你获得的 $(pncr) 的 $(thing)进度/$ 来解锁。回头检查模组的进度页面来得知下一步应该干什么的。（你将会在解锁进度的时候获得一些些的$(thing)经验/$，这真是太棒了XD）。"
+    }
+  ]
+}
