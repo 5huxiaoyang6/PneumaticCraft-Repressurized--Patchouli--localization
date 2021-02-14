@@ -1,0 +1,7 @@
+{
+  "name": "其他编程工具",
+  "description": "不符合其他分类的编程工具。",
+  "icon": "pneumaticcraft:textures/items/progwidgets/comment_piece.png",
+  "parent": "programming",
+  "sortnum": 4
+}

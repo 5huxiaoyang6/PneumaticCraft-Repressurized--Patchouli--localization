@@ -1,0 +1,6 @@
+{
+  "name": "装配",
+  "description": "用于制作其他 $(pncr) 的工具和机械的一些机械和系统",
+  "icon": "pneumaticcraft:assembly_controller",
+  "sortnum": 3
+}

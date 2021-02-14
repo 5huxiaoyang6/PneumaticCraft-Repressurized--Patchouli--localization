@@ -1,0 +1,7 @@
+{
+  "name": "流控制编程工具",
+  "description": "影响程序流程的编程工具。",
+  "icon": "pneumaticcraft:textures/items/progwidgets/start_piece.png",
+  "parent": "programming",
+  "sortnum": 1
+}

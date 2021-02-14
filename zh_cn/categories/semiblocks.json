@@ -1,0 +1,6 @@
+{
+  "name": "框架/小工具",
+  "description": "$(thing)框架/$ 为非方块却能像方块一样放置的奇特的物品，并且能套在一个普通的方块上。$(p)像是 $(l:logistics/frames)物流框架/$ 严格意义上来说也同样是框架。",
+  "icon": "pneumaticcraft:transfer_gadget",
+  "sortnum": 7
+}

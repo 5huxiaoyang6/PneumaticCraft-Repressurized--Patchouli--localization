@@ -1,0 +1,6 @@
+{
+  "name": "物流",
+  "description": "物流系统是移动物品和流体、维持库存与流体储量的有效手段。",
+  "icon": "pneumaticcraft:logistic_drone",
+  "sortnum": 8
+}
