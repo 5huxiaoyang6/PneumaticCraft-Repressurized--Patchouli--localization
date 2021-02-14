@@ -1,0 +1,63 @@
+{
+  "name": "远程终端",
+  "icon": "pneumaticcraft:remote",
+  "category": "tools",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "远程终端可以让你使用自定义的GUI通过操纵 $(l:programming/variables#global)全局变量/$ 来远程操控 $(l:tools/drone)无人机/$ 或 $(l:machines/universal_sensor)万能传感器/$. 关于 $(item)万能传感器/$, 你可以用 $(item)远程终端/$ 来实现无线红石系统!$(p)要开始自定义GUI, 先 $(thing)潜行右击/$ $(item)远程终端/$ 打开编辑窗口."
+    },
+    {
+      "type": "text",
+      "text": "为窗口添加内容类似于 $(l:programming/programmer)编程台/$ 的工作方式; 从右侧栏内左键点击并拖拽需要的功能组件到主窗口内.$(p)如需复制组件, $(thing)中键点击/$ 拖拽. 要编辑组件的属性, $(thing)右击/$ 组件即可. 例如右击这个按钮组件, 它会打开后面所示的窗口:"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/remote_button.png"
+      ],
+      "text": "在这个界面, 你可以设置按钮的外观以及它如何工作."
+    },
+    {
+      "type": "text",
+      "text": "接下来的这些属性是 $(italic)所有/$ 组件都拥有的:$(li)$(thing)文本/$ - 在组件上显示的文本$(li)$(thing)提示文本/$ - 当指针悬停在组件上时显示的文本$(li)$(thing)启用变量/$ - 填入变量名, 当链接的 $(l:programming/coordinate_operator)变量/$ 的值为设定值时组件才显示. 通过给定 X/Y/Z 一个值, 实现只有当变量的值等于给定的值时才显示组件."
+    },
+    {
+      "type": "text",
+      "title": "标签",
+      "anchor": "label",
+      "text": "这个组件用于显示一些文本, 带有可选的提示文本, 用于提示一些星信息. 标签不能够 $(italic)修改/$ 变量, 但能 $(italic)显示/$ 变量的值, 使用 $(thing)${#全局变量名}/$ 语法来实现, 这能用于调试以排除故障.$(p)标签组件没有除了默认属性外的可修改内容."
+    },
+    {
+      "type": "text",
+      "title": "按钮",
+      "text": "按钮组件会在其被按下后修改所链接的变量.$(li)$(thing)变量名/$ - 链接的全局变量.$(li)$(thing)设定值/$ - 当按下按钮时将链接的变量 X/Y/Z 值修改为设定的值.$(li)$(thing)宽/高/$ - 按钮的大小."
+    },
+    {
+      "type": "text",
+      "title": "复选框",
+      "text": "当复选框组件被勾选时会将链接变量的 X 值修改为1, 否则为0.$(li)$(thing)变量名/$ - 链接的全局变量."
+    },
+    {
+      "type": "text",
+      "title": "下拉菜单",
+      "text": "下拉菜单组件会将链接变量的 X 值修改为所选元素的索引.$(li)$(thing)下拉菜单元素/$ - 以逗号分隔的文本列表.$(li)$(thing)变量名/$ - 链接的全局变量.$(li)$(thing)排序/$ - 如果勾选, 列表中的元素将会按照字母顺序排列. 否则会以添加元素的顺序排列."
+    },
+    {
+      "type": "text",
+      "title": "实例",
+      "text": "使用左侧 $(thing)Pastebin/$ 按钮, 导入 $(l:https://pastebin.com/4yxKG5Jc)这个布局/$.$(p)这个布局添加了三个复选框, 并设定了三个全局变量 $(thing)signal1, signal2 & signal3/$.$(p)现在放置三台 $(l:machines/universal_sensor)万能传感器/$, 并给予压缩空气. 为每个 $(item)传感器/$ 放入 $(l:base_concepts/upgrades#dispenser)发射器升级/$ . 给 $(item)传感器/$ 铺设一些红石(摆放时分隔一些距离以确保红石之间不会连接)."
+    },
+    {
+      "type": "text",
+      "title": "实例 (续)",
+      "text": "在每个 $(item)传感器/$ 的 GUI 内:$(li)选择 $(thing)发射器/$ 按钮$(li)选择 $(thing)世界/$$(li)选择 $(thing)全局变量/$$(li在 $(thing)变量名/$ 文本框分别输入 'signal1', 'signal2' & 'signal3'.$(p)现在, $(thing)右击/$ 你的 $(item)远程终端/$, 并尝试 选择/取消选择 每一个复选框. 相应的 $(item)传感器/$ 会发出适当的红石信号: 无线红石!"
+    },
+    {
+      "type": "crafting",
+      "text": "制作远程终端",
+      "recipe": "pneumaticcraft:remote"
+    }
+  ]
+}

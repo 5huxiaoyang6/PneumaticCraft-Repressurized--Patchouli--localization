@@ -1,0 +1,40 @@
+{
+  "name": "压力管道",
+  "icon": "pneumaticcraft:pressure_tube",
+  "category": "tubes",
+  "advancement": "pneumaticcraft:root",
+  "priority": "true",
+  "pages": [
+    {
+      "type": "text",
+      "text": "压力管道是$(pncr)中最基础的用于在机器与压缩机之间传输压缩空气的设备。$(p)未连接的管道会漏气！然而，管道的侧面可以通过$(l:tools/pneumatic_wrench)气动扳手/$右击来切换开/关。其他模组的扳手也许也可以。"
+    },
+    {
+      "type": "image",
+      "title": "Tubes!",
+      "text": "$(italic)两个装有$(l:tubes/pressure_gauge_module)压力表/$ $(italic)压力管道连接着一个$(l:compressors/air_compressor)空气压缩机/$ $(italic)以及一个$(l:machines/air_cannon)空气炮/$",
+      "images": [
+        "pneumaticcraft:textures/patchouli/pressure_tubes.png"
+      ],
+      "border": "true"
+    },
+    {
+      "type": "text",
+      "text": "压力管道可以加装$(l:tubes/tube_modules)管道模块/$，一种给管道增加多种功能的组件。更多信息详见管道模块各页。$(p)压力管道可以通过$(l:tools/camo_applicator)伪装涂盖器/$隐藏。"
+    },
+    {
+      "type": "text",
+      "text": "有两种$(l:base_concepts/pressure_tiers)等级/$的管道：$(br)$(li)等级1的管道非常容易制作。其最大容纳气压为5bar，以及气容为1000mL。$(li)高级压力管道需要$(l:manufacturing:assembly_system)装配线/$来装配制作。高级压力管道可以最大容纳20bar的气压以及有着4000mL的气容。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个压力管道",
+      "recipe": "pneumaticcraft:pressure_tube"
+    },
+    {
+      "anchor": "advanced",
+      "type": "pneumaticcraft:assembly_system",
+      "item": "pneumaticcraft:advanced_pressure_tube"
+    }
+  ]
+}

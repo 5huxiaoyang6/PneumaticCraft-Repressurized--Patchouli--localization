@@ -1,0 +1,32 @@
+{
+  "name": "空气栅管道模块",
+  "icon": "pneumaticcraft:air_grate_module",
+  "category": "tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个模块是用于吸引/推动实体向模块的模块。当有着正$(l:base_concepts/pressure)气压/$时，管道就会将实体推开；当气压为$(thing)负/$时，它会将实体“吸”过来。负气压可以通过$(l:machines/vacuum_pump)真空泵/$实现。当物品实体与其距离足够近时，模块会自动将其放入毗邻的容器内、或者是特定的面（像是熔炉）。"
+    },
+    {
+      "type": "text",
+      "text": "模块的范围（立方体“半径”，译者注）可以用如下公式表达：$(p)当气压为正时：$(p)$(#272)范围 = 4 x 气压(bar)/$ $(p)当气压为负时：$(p)$(#272)范围 = -16 x 气压 (bar)/$ $(p)比如说，气压为2bar时它排斥范围为4x2八格。当气压为-0.5bar时，它会吸引-16x(-0.5)=8格内的实体。右击一个空气栅模块会显示其作用范围。"
+    },
+    {
+      "type": "text",
+      "title": "散热片冷却",
+      "anchor": "active_cooling",
+      "text": "空气栅模块还可以用于$(l:machines/heat_sink)散热片/$的主动冷却。散热片可以被冷却的范围为模块前方3x3x3的立方体。当模块被放置时，范围即可见。$(p)空气栅模块当有着三格的范围时，会仅用于冷却散热片（就是0.75bar）。"
+    },
+    {
+      "type": "text",
+      "title": "高级印刷电路板",
+      "text": "When you apply an $(l:tubes/advanced_pcb)Advanced PCB/$, you gain control over which entities are affected by the module.$(p)You could set it up, for example, so that only a certain player gets affected, or only Creepers, or only items. This can be done by right clicking the upgraded module to open a GUI allowing an $(l:base_concepts/entity_filter)entity filter/$ to be defined."
+    },
+    {
+      "type": "crafting",
+      "text": "Creating the Air Grate Module",
+      "recipe": "pneumaticcraft:air_grate_module"
+    }
+  ]
+}

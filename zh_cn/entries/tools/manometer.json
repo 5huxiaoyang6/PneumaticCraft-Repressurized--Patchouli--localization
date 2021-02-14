@@ -1,0 +1,23 @@
+{
+  "name": "压力计",
+  "icon": "pneumaticcraft:manometer",
+  "category": "tools",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "压力计用于测量气动网络的 $(l:base_concepts/pressure)压力/$, 一些气动 设备/管道 还会有特殊的信息. 例如, $(l:tubes/safety_module)安全管道模块/$ 会展示其安全阈值. 因此如果你对使用红石来测量压力感到厌恶, 这个工具对你来说会特别有帮助."
+    },
+    {
+      "type": "crafting",
+      "text": "制作压力计",
+      "recipe": "pneumaticcraft:manometer"
+    },
+    {
+      "type": "text",
+      "title": "其他模组",
+      "flag": "|mod:theoneprobe,mod:hwyla",
+      "text": "如果你安装了例如 $(thing)The One Probe/$ 或者 $(thing)WAILA/HWYLA/$, $(item)压力计/$ 或许对你来说没什么用."
+    }
+  ]
+}

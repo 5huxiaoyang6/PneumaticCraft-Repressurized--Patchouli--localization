@@ -1,0 +1,17 @@
+{
+  "name": "刷怪笼激活器",
+  "icon": "pneumaticcraft:spawner_agitator",
+  "category": "semiblocks",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "当将其放置在放置 $(item)刷怪笼/$ 上时, 它将会 $(thing)激活/$ 刷怪笼:$(li)生成的实体不会因为距离玩家过远而消失.$(li)玩家离开了刷怪笼的范围依然会正常工作.$(p)想要制作一个怎么的怪物农场呢?$(p)手持 $(l:tools/logistics_configurator)物流配置器/$ 或其激活器 $(thing)潜行右击/$ 以移除刷怪笼激活器."
+    },
+    {
+      "type": "crafting",
+      "text": "制作刷怪笼激活器",
+      "recipe": "pneumaticcraft:spawner_agitator"
+    }
+  ]
+}

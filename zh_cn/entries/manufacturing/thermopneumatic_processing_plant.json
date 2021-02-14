@@ -1,0 +1,29 @@
+{
+  "name": "热气动加工机",
+  "icon": "pneumaticcraft:thermopneumatic_processing_plant",
+  "category": "manufacturing",
+  "advancement": "pneumaticcraft:refinery",
+  "pages": [
+    {
+      "type": "text",
+      "text": "热气动加工机消耗 $(l:base_concepts/pressure)压缩空气/$ 和/或 $(l:base_concepts/heat)热量/$ 来加工原料. 它有数个作用:$(li)100mB $(thing)液化石油气/$ 和一个 $(item)煤炭/$ 制作出 1000mB  $(l:components/plastic)塑料/$. 需要热量但不需要压缩空气.$(li)1000mB $(thing)柴油/$ 和一个 $(item)红石/$ 制作出 1000mB $(l:components/lubricant)润滑油/$. 同样, 需要热量而不需要压缩空气."
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(item)热气动加工机/$ 可以以80%的比率将 $(l:manufacturing/refinery)精炼/$ 产生的较重的油裂解为较轻的油:$(li)柴油 -> 煤油$(li)煤油 -> 汽油$(li)汽油 -> 液化石油气$(p)这需要热量和压缩空气."
+    },
+    {
+      "type": "link",
+      "flag": "mod:crafttweaker",
+      "title": "CraftTweaker",
+      "text": "$(thing)热气动加工机/$ 支持 $(l:https://minecraft.curseforge.com/projects/crafttweaker)CraftTweaker/$ 对配方的修改: 支持配方的修改与删除. 点击下面的连了解更多.",
+      "url": "https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/ThermopneumaticProcessingPlant/",
+      "link_text": "CraftTweaker Docs"
+    },
+    {
+      "type": "crafting",
+      "text": "制作热气动加工机",
+      "recipe": "pneumaticcraft:thermopneumatic_processing_plant"
+    }
+  ]
+}

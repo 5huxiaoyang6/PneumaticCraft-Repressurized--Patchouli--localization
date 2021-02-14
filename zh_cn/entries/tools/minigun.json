@@ -1,0 +1,22 @@
+{
+  "name": "加特林机枪",
+  "icon": "pneumaticcraft:minigun",
+  "category": "tools",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)加特林机枪/$ 是手持的武器, 通过消耗 $(l:base_concepts/pressure)压缩空气/$ 和 $(l:tools/minigun_ammo)弹药/$ 进行攻击. 弹药需要放入 $(l:tools/minigun_ammo#magazine)机枪的弹药库/$ - 它不会从玩家的背包中消耗弹药.$(p)按住$(thing)右键/$来开火. 枪管会开始旋转并在达到最高速度时开火."
+    },
+    {
+      "type": "text",
+      "title": "升级",
+      "text": "很多 $(item)机枪/$ 的功能(加速速率, 范围, 药水触发几率...) 可以在 $(l:machines/charging_station)充能站/$ 升级获得.$(p)所有的可用升级及其效果文件都会显示在充能站GUI内."
+    },
+    {
+      "type": "crafting",
+      "text": "制作加特林机枪",
+      "recipe": "pneumaticcraft:minigun"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+
+{
+  "name": "精炼厂",
+  "icon": "pneumaticcraft:refinery",
+  "category": "manufacturing",
+  "advancement": "pneumaticcraft:oil_bucket",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)精炼厂/$ 是一种使用 $(l:base_concepts/heat)热量/$ 来精炼 $(l:base_concepts/oil)原油/$ 并产出各种燃料. 工作温度至少为 100°C. 温度越高, 精炼速度越快. 可以生产的燃料从最轻到最重依次为:$(li)$(thing)液化石油气 (LPG)/$$(li)$(thing)汽油/$$(li)$(thing)煤油/$$(li)$(thing)柴油/$"
+    },
+    {
+      "type": "text",
+      "text": "单个 $(item)精炼厂/$ 方块不能够工作: 需要2至4个竖直堆叠在一起才能正常工作. $(p)不同的多方块结构大小的产出不同; 给定10ml的原油输入:$(p)$(bold)2个精炼厂/$$(br)$(li)$(thing)液化石油气/$ (2mB)$(li)$(thing)柴油/$ (4mB)$(br)$(bold)3个精炼厂/$$(li)$(thing)液化石油气/$ (2mB)$(li)$(thing)煤油/$ (3mB)$(li)$(thing)柴油/$ (2mB)"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)4个精炼厂/$$(br)$(li)$(thing)液化石油气/$ (2mB)$(li)$(thing)汽油/$ (3mB)$(li)$(thing)煤油/$ (3mB)$(li)$(thing)柴油/$ (2mB)$(p)最轻的油总是在最顶层的 $(item)精炼厂/$, 重的则在底部.  如果你添加 $(item)精炼厂/$ 到现有的精炼厂上, 多方块结构会自动将各种油排列到正确的位置上, 确保精炼厂能正常工作."
+    },
+    {
+      "type": "text",
+      "text": "所有的流体产物都可以作为 $(l:compressors/liquid_compressor)流体压缩机/$ 的燃料 (越轻的燃料效率越高).$(p)但除了做燃料外还有两种重要的用途:$(li)$(thing)液化石油气/$ 用于制作液态 $(l:components/plastic)塑料/$$(li)$(thing)柴油/$ 加工为 $(l:components/lubricant)润滑油/$ 用于制作 $(l:base_concepts/upgrades#speed)速度升级/$.$(p)$(l:manufacturing/thermopneumatic_processing_plant)热气动加工机/$ 用于以上两个加工."
+    },
+    {
+      "type": "text",
+      "title": "比较器支持",
+      "text": "$(item)精炼厂/$ 能够被 $(item)比较器/$ 检测: 当 $(item)精炼厂/$ 正在工作时输出强度15的信号, 未工作时强度为0. 它会在有 $(thing)原油/$ 被提供 $(italic)且/$ 有足够的产物输出空间时工作."
+    },
+    {
+      "type": "text",
+      "title": "配置提示",
+      "text": "如果 $(item)精炼厂/$ 多方块机构的任意一个面暴露在空气中, 那么它的 $(l:base_concepts/heat)温度/$ 会迅速下降. 因此, 强烈建议将该多方块结构的所有未被使用的面覆盖上以最大化提高效率. 任何非导热方块都可以使用, 包括非完整方块, 如 $(item)台阶/$ 或 $(item)活板门/$."
+    },
+    {
+      "type": "text",
+      "text": "你可以使用 a $(l:blocks/vortex_tube)涡流管/$ 来给 $(item)精炼厂/$ 加热, 或使用热的流体 (熔岩...) 或方块 (岩浆块...) 贴着 $(item)精炼厂/$ 放置.  注意, 这些流体和方块会被用完 (它们的热量耗尽), 因此你可能会希望有方式能自动化生产和放置这些资源."
+    },
+    {
+      "type": "link",
+      "flag": "mod:crafttweaker",
+      "title": "CraftTweaker",
+      "text": "$(item)精炼厂/$ 支持 $(l:https://minecraft.curseforge.com/projects/crafttweaker)CraftTweaker/$ 的修改: 配方可以被修改或删除. 点击下方的连接查看更多.",
+      "url": "https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/Refinery/",
+      "link_text": "CraftTweaker Docs"
+    },
+    {
+      "type": "crafting",
+      "text": "制作精炼厂",
+      "recipe": "pneumaticcraft:refinery"
+    }
+  ]
+}

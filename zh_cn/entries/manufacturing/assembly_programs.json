@@ -1,0 +1,18 @@
+{
+  "name": "装配程序",
+  "icon": "pneumaticcraft:assembly_program:1",
+  "category": "manufacturing",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)装配程序/$ 只能安装在 $(l:manufacturing/assembly_system)装配控制器/$ 内以为其设定需要进行哪种合成操作. 装配程序无法被制作, 但可以通过交易获得; 可以通过与 $(thing)技工村民/$ 或是 $(l:tools/amadron_tablet)Amadron 平板电脑/$ 交易获得."
+    },
+    {
+      "type": "spotlight",
+      "title": "钻头和激光",
+      "item": "pneumaticcraft:assembly_program:2",
+      "text": "$(item)装配程序: 钻头和激光/$ 比较特殊. 它并不是用于取代钻头或激光程序, 而是用于将钻头 $(italic)和/$ 激光两步骤合并为一步进行工作, 例如用于合成 $(l:tubes/pressure_tubes#advanced)高级压力管道/$."
+    }
+  ]
+}

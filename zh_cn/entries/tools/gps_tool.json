@@ -1,0 +1,33 @@
+{
+  "name": "定位工具",
+  "icon": "pneumaticcraft:gps_tool",
+  "category": "tools",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text": "手持 $(item)定位工具/$ $(thing)右击/$ 以存储坐标. 这个坐标可以被用在一些 $(pncr) 的设备里, 参阅下一页.$(p)手持 $(item)定位工具/$ $(thing)右击/$ 空气可以打开GUI直接配置坐标.$(p)手持 $(item)定位工具/$ 高亮显示被选中的方块."
+    },
+    {
+      "type": "relations",
+      "entries": [
+        "machines/air_cannon",
+        "machines/universal_sensor",
+        "programming/programmer",
+        "tools/amadron_tablet"
+      ],
+      "text": "可以使用 $(item)定位工具/$ 的设备."
+    },
+    {
+      "type": "text",
+      "anchor": "variables",
+      "title": "连接全局变量",
+      "text": "$(l:programming/variables#global)全局变量/$ 时 $(l:base_concepts/drone)无人机/$ 的特色, 允许 $(l:programming/coordinate_operator)坐标算子/$ 访问.$(p)对着空气 $(thing)右击/$ $(item)定位工具/$ 可以打开GUI对变量名设置.$(p)现在, 这个 $(thing)全局变量/$ 将会随着 $(item)定位工具/$ 的坐标改变而改变. 这可以用来制作可改变工作区域的 $(thing)无人机程序/$."
+    },
+    {
+      "type": "crafting",
+      "text": "制作定位工具",
+      "recipe": "pneumaticcraft:gps_tool"
+    }
+  ]
+}

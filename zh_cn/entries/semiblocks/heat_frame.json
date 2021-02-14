@@ -1,0 +1,25 @@
+{
+  "name": "导热框架",
+  "icon": "pneumaticcraft:heat_frame",
+  "category": "semiblocks",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个物品可以放置在任何 $(thing)容器/$ 上. 当其接触到 $(l:base_concepts/heat)热源/$ 它将会尝试对容器内的物品进行冶炼 (或者对其冷却). 它仅会在有足够的空间来容纳产物时才会工作. 提供的热量越多, 工作的效率越高, 最高效率是 1 item/second . 同样的, 降低的温度约低, 冷却的越快."
+    },
+    {
+      "type": "link",
+      "flag": "mod:crafttweaker",
+      "title": "CraftTweaker",
+      "text": "$(thing)导热框架/$ 支持 $(l:https://minecraft.curseforge.com/projects/crafttweaker)CraftTweaker/$ 对冷却配方的修改 (冶炼的配方就是 $(item)熔炉/$ 的配方): 可以添加或伤处配方. 点击下方的链接查看更多.",
+      "url": "https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/Heat_Frame_Cooling/",
+      "link_text": "CraftTweaker Docs"
+    },
+    {
+      "type": "crafting",
+      "text": "制作导热框架",
+      "recipe": "pneumaticcraft:heat_frame"
+    }
+  ]
+}

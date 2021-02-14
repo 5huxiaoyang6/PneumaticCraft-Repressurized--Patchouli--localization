@@ -1,0 +1,21 @@
+{
+  "name": "区域定位工具",
+  "icon": "pneumaticcraft:gps_area_tool",
+  "category": "tools",
+  "advancement": "pneumaticcraft:plastic",
+  "pages": [
+    {
+      "type": "text",
+      "text":"$(item)区域定位工具/$ 是一种高级的 $(l:tools/gps_tool)定位工具/$, 他可以存储 $(italic)两个/$ 坐标. $(thing)左击/$ 一个方块 (或者空气) 以设定第一个坐标, 然后 $(thing)右击/$ 以设定第二个坐标. 通过 $(thing)右/$ 或 $(thing)左击/$ 空气, 你可以在其GUI中配置位置, 另外你可以改变 $(thing)区域类型/$, 并预览不同类型的差异. "
+    },
+    {
+      "type": "text",
+      "text": "$(item)区域定位工具/$ 和 /$ like the basic $(l:gps_tool#variables)定位工具/$ 一样支持 $(l:programming/variables#global)全局变量.$(p)在$(l:programming/programmer)编程台/$ 中, 用 $(item)区域定位工具/$ $(thing)左击/$ 空白背景可以创建一个 $(l:programming/area)区域/$ 编程拼图, 或者 $(thing)左击/$ 一个已经存在的 $(l:programming/area)区域/$ 编程拼图来覆盖其中的坐标."
+    },
+    {
+      "type": "crafting",
+      "text": "制作区域定位工具",
+      "recipe": "pneumaticcraft:gps_area_tool"
+    }
+  ]
+}

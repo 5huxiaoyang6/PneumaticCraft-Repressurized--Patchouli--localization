@@ -1,0 +1,68 @@
+{
+  "name": "机枪弹药",
+  "icon": "pneumaticcraft:gun_ammo",
+  "category": "tools",
+  "advancement": "pneumaticcraft:minigun",
+  "pages": [
+    {
+      "type": "text",
+      "text": "机枪弹药被用在$(l:tools/minigun)加特林机枪上/$.$(p)依据弹药类型, 一个弹药筒最多可以装1000发弹药. 弹药会在 $(item)机枪/$ 开火时逐渐消耗, 弹药等级可以在其说明中查看, 它的耐久可以在 (当机枪被装备时) HUD 中看到, 在屏幕中央准星的附近."
+    },
+    {
+      "type": "text",
+      "anchor": "magazine",
+      "text": "弹药必须被放置到 $(item)加特林机枪/$ 的弹药库; 它不会从玩家的背包中直接小号弹药. 手持$(item)机枪/$ $(thing)潜行右击/$ 来为其装填弹药.$(p)弹药的消耗会按照 1-4 的顺序进行, 但你可以 $(thing)单击中键/$ 槽位来锁定使用, 强制 $(item)机枪/$ 消耗被锁定槽位的弹药; 这在你装备了多种类型弹药时很实用. $(thing)单击中键/$ 锁定的槽位以解锁."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo",
+      "text": "普通的 $(item)机枪子弹/$ 没有特殊的功能, 但拥有最多的 1000 发弹药.$(p)此外, 它是唯一可以与 $(l:tools/minigun_ammo#potions)药水/$ 合成并获得相应能力的弹药."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_incendiary",
+      "text": "$(item)燃烧型弹药/$ 一个弹仓有 500 发子弹, 并且会在击中时附加着火效果.$(p)也可以在方块上生产火焰, 因此建议小心谨慎!"
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_weighted",
+      "text": "$(item)重质型弹药/$ 一个弹仓有 250 发子弹, 并且拥有更高的伤害, 但因其重量大而只有普通弹药 20% 的射程."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_ap",
+      "text": "$(item)破甲型弹药/$ 一个弹仓有 250 发子弹, 而且制作成本较高, 但是比普通弹药造成的伤害稍微大一些, 并且能够无视目标的护甲."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_explosive",
+      "text": "$(item)爆炸型弹药/$ 一个弹仓有 125 发子弹. 每次击中都有几率产生爆照; 当心, 爆照也会伤及自身. $(ttcolor)$(t:查看模组设置中的 'B:explosiveAmmoTerrainDamage')默认/$ 爆炸不会破坏地形 ."
+    },
+    {
+      "type": "spotlight",
+      "item": "pneumaticcraft:gun_ammo_freezing",
+      "text": "$(item)寒冰型弹药/$ 一个弹仓有 250 发子弹. 它会降低目标的速度, 并且有几率使其被有害的 '冰' 包裹.$(p)它对耐火目标造成更多伤害, 因此使用它在 $(#800)下届/$ 战斗是卓越的选择."
+    },
+    {
+      "type": "text",
+      "title": "药水弹药",
+      "anchor": "potions",
+      "text": "你可以将标准弹药合称为带有 $(item)药水/$ 效果的特殊弹药, 弹药将不再造成物理伤害, 而是有几率给予目标药水效果.$(p)$(thing)喷溅/$ 和 $(thing)滞留/$ 药水 也可以被用来合成; 它们会造成范围性的药水效果, 但其弹药消耗速率会加快, 喷溅型是原来的 3 倍, 滞留型则是 6 倍!"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:gun_ammo",
+      "recipe2": "pneumaticcraft:gun_ammo_incendiary"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:gun_ammo_weighted",
+      "recipe2": "pneumaticcraft:gun_ammo_ap"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:gun_ammo_explosive",
+      "recipe2": "pneumaticcraft:gun_ammo_freezing"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "无人机",
+  "icon": "pneumaticcraft:drone",
+  "category": "tools",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "无人机是强大的可编程飞行机器人, 几乎可以用在各种类型的自动化中. 在使用之前需要先为其编程; 为了做到这点你需要 $(l:programming/programmer)编程台/$ 和一些 $(l:programming/puzzle_pieces)编程拼图/$.$(p)当你放置了被编程过的并已被 $(l:base_concepts/pressure)加压/$ 的无人机, 他将会执行程序任务."
+    },
+    {
+      "type": "entity",
+      "entity": "pneumaticcraft:drone",
+      "offset": -0.3
+    },
+    {
+      "type": "text",
+      "title": "自动加压",
+      "text": "无人机是智慧的: 当其气压处于低水平时, 它将会自动搜索与 $(item)无人机/$ 同一个维度内且安装有 $(l:base_concepts/upgrades#dispenser)发射器升级/$ 的 $(l:machines/charging_station)充能站/$. 这一行为会覆盖当前正在运行的程序.$(p)当找到后, $(item)无人机/$ 会移动到 $(item)充能站/$ 并且呆在上面直到充能站不能再提供压缩空气. 在这之后, $(item)无人机/$ 会回恢复程序的运行."
+    },
+    {
+      "type": "text",
+      "title": "自动加压 (续)",
+      "text": "在多人服务器中, 你可能希望只有你的无人机会使用你的充能站. 你可以将 $(item)充能站/$ 放置在 $(l:machines/security_station)安全站/$ 的范围内以达到该目的.$(p)这样就只有被加入 $(item)安全站/$ 白名单的玩家放置的 $(item)无人机/$ 可以使用你的充能站."
+    },
+    {
+      "type": "text",
+      "text": "当 $(item)无人机/$ 的空气被完全用完, 它的螺旋桨会停止旋转并且它将直直的掉到地上. 注意: 无人机可以承受坠落伤害! $(item)无人机/$ 被摧毁后会以物品的形式掉落下来.$(p)你能够通过将 $(item)无人机/$ 与 $(item)染料/$ 合成来为其染色. 你也可以在世界中为其 $(item)染色/$ , 通过手持 $(item)染料/$ $(thing)右击/$ 它. 染色仅仅只是外观变化, 可以帮助你区分无人机."
+    },
+    {
+      "type": "text",
+      "title": "排除故障",
+      "text": "嗯~, 这架 $(item)无人机/$ 是如何做到这样工作的? 为什么它什么都不做? 你可以通过佩戴装 $(l:armor/pneumatic_helmet)气动头盔/$ 并安装 $(l:base_concepts/upgrades#dispenser)发射器升级/$ 和 $(l:base_concepts/upgrades#entity_tracker)实体追踪升级/$ 来观察并调试无人机. 将准星对着 $(item)无人机/$ 并确保开启了 $(thing)实体追踪/$ , 按下 $(thing)$(k:pneumaticcraft.helmet.debugging.drone)/$ 键来查看."
+    },
+    {
+      "type": "crafting",
+      "text": "制作无人机",
+      "recipe": "pneumaticcraft:drone"
+    }
+  ]
+}

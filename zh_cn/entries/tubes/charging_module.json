@@ -1,0 +1,22 @@
+{
+  "name": "充气模块",
+  "icon": "pneumaticcraft:charging_module",
+  "category": "tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个模块允许你为其面对的容器内的物品充气 (或放气) , 例如一个放着气动工具的箱子, 或者用于长距离运输压缩空气的 $(l:components/air_canister)空气罐/$ (可能时基于末影箱的系统来实现).$(p)你可以将这个模块对着 $(l:machines/aerial_interface)空气接口/$ 放置以达到为玩家背包内物品进行充气的效果."
+    },
+    {
+      "type": "text",
+      "title": "Advanced PCB",
+      "text": "当你为其添加 $(l:components/advanced_pcb)高级印刷电路板/$, 这个模块的充气速率会从 10mL/tick (每物品) 提升至 100mL/tick (每物品)"
+    },
+    {
+      "type": "crafting",
+      "text": "制作充气模块",
+      "recipe": "pneumaticcraft:charging_module"
+    }
+  ]
+}

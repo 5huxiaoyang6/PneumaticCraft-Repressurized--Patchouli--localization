@@ -1,0 +1,29 @@
+{
+  "name": "红石模块",
+  "icon": "pneumaticcraft:redstone_module",
+  "category": "tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个模块可以让 $(#f00)红石信号/$ 在两个由管道连接的该模块之间传输, 将管道用作红石导管.$(p)用 $(item)染料/$ 为其染色可以增加至多 16 个频道.$(p)用 $(item)扳手/$ 右击模块来设置其为输入或输出模式."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/redstone_module.png"
+      ],
+      "border": "true"
+    },
+    {
+      "type": "text",
+      "title": "Advanced PCB",
+      "text": "当你为其添加了 $(l:tubes/advanced_pcb)高级印刷电路板/$, 它将可以提供额外的信号处理机制. 当将其设置为 $(thing)输出模式/$ 后, 可以右击打开一个 GUI 来选择你需要的信号处理模式, 例如反转信号, 与其他频道的信号进行 和/或/异 逻辑的处理...$(p)在 GUI 中详细的描述了每种模式的效果."
+    },
+    {
+      "type": "crafting",
+      "text": "制作红石模块",
+      "recipe": "pneumaticcraft:redstone_module"
+    }
+  ]
+}

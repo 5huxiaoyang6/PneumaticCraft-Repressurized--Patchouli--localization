@@ -1,0 +1,35 @@
+{
+  "name": "塑料混合机",
+  "icon": "pneumaticcraft:plastic_mixer",
+  "category": "manufacturing",
+  "advancement": "pneumaticcraft:tp_plant",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)塑料混合机/$ 通过消耗 $(l:components/plastic)液态塑料/$ 来制作固体 $(thing)塑料/$, 反之亦然.$(p)融化 $(thing)塑料/$ 需要 $(l:base_concepts/heat)热量/$ (150°C), 但凝固 $(thing)塑料/$ $(italic)不需要/$ 提供热量. 为了生产不同颜色的塑料, 需要提供 $(4)红/$ / $(2)绿/$ / $(1)蓝/$ 三种$(item)染料/$ (除了生产 $(item)白色塑料片/$ 不需要染料)."
+    },
+    {
+      "type": "text",
+      "title": "固化塑料",
+      "text": "打开 $(bold)塑料混合机/$ 的选择物品 GUI 选项卡: 你能看到16种颜色的塑料片. 单击你所需要的 $(thing)塑料片/$ 颜色, 染料就会与 $(l:components/plastic)液态塑料/$ 混合并在输出槽凝固成 $(item)塑料片/$ .$(p)$(bold)锁定选择/$ 按钮会锁定你所选择的 $(item)塑料片/$ 颜色, 并不停的制作该颜色的塑料片."
+    },
+    {
+      "type": "text",
+      "title": "红石行为",
+      "text": "此外, 除了默认的 $(thing)红石/$ 行为 (有红石信号时工作和无红石信号时工作), $(item)塑料混合机/$ 还有一种 $(bold)信号强度选择/$ 模式.$(p)在这个模式下 $(item)塑料片/$ 的颜色将会根据 $(#f00)红石信号/$ 的强度来决定. 例如, 强度0 黑色, 强度1 红色, 以此类推, 对应选择物品GUI选项卡内的顺序."
+    },
+    {
+      "type": "link",
+      "flag": "mod:crafttweaker",
+      "title": "CraftTweaker",
+      "text": "$(item)塑料混合机/$ 支持 $(l:https://minecraft.curseforge.com/projects/crafttweaker)CraftTweaker/$ 的修改: 输入的流体可以被添加, 删除, 修改, 并且可以改变 流体->固体 的比率. 点击下方的链接查看更多信息.",
+      "url": "https://crafttweaker.readthedocs.io/en/latest/#Mods/PneumaticCraft_Repressurized/PlasticMixer/",
+      "link_text": "CraftTweaker Docs"
+    },
+    {
+      "type": "crafting",
+      "text": "制作塑料混合机",
+      "recipe": "pneumaticcraft:plastic_mixer"
+    }
+  ]
+}

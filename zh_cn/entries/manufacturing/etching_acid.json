@@ -1,0 +1,16 @@
+{
+  "name": "蚀刻酸",
+  "icon": "forge:bucketfilled{FluidName:'etchacid',Amount:1000}",
+  "category": "manufacturing",
+  "advancement": "pneumaticcraft:pressure_chamber",
+  "pages": [
+    {
+      "type": "text",
+      "text": "蚀刻酸是用来以化学方式制作 $(l:components/pcb)印刷电路板/$ 的材料, 需要通过 $(l:manufacturing/pressure_chamber)压力/$ 来合成获得.$(p)查看 $(l:components/pcb)印刷电路板/$ 以了解更多内容."
+    },
+    {
+      "type": "pneumaticcraft:pressure_chamber",
+      "item": "forge:bucketfilled{FluidName:'etchacid',Amount:1000}"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "安全管道模块",
+  "icon": "pneumaticcraft:safety_tube_module",
+  "category": "tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个管道模块用于将管道中的$(l:base_concepts/pressure)压力/$ 限制在一定的数值内，防止$(thing)爆炸/$发生；如果爆炸发生了。任何多余的压力都会被分散到大气中，这意味着$(thing)压力泄露/$，因此，该模块最好与$(l:tubes/pressure_gauge_module)压力表管道模块/$配合使用，它可以发出红石来开启或关闭(高级)空气压缩机。"
+    },
+    {
+      "type": "text",
+      "text": "要设定模块工作的阈值压力$(formula)Pt/$，应用强度$(formula)S/$的$(#f00)红石信号/$ (面对模块的一侧)：$(p)$(formula)  S = 15 - (2 x Pt)/$(p)$例如，要将压力限制在4.5bar，应用强度为6(15 - 2 x 4.5)的信号。"
+    },
+    {
+      "type": "text",
+      "title": "高级印刷电路板",
+      "text": "将$(l:components/advanced_pcb)高级印刷电路板/$应用于安全管道模块时会获得一个界面, 右击显示它，可以对压力阀值进行更多的控制，这和$(l:tubes/pressure_gauge_module#img)压力表界面/$很像，但方向相反。"
+    },
+    {
+      "type": "crafting",
+      "text": "制作一个安全管道模块",
+      "recipe": "pneumaticcraft:safety_tube_module"
+    }
+  ]
+}

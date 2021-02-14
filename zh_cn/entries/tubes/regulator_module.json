@@ -1,0 +1,30 @@
+{
+  "name": "调节器模块",
+  "icon": "pneumaticcraft:regulator_tube_module",
+  "category": "tubes",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "调节器模块是一种安装在 $(thing)管道内/$ 的模块用以调节允许经过该模块的 $(l:base_concepts/pressure)压力/$. 要设定压力大小 $(formula)Pt/$, 需要提供对应的 $(#f00)红石信号/$ $(formula)S/$:$(p)$(formula)  Pt = (15 - S) / 2/$$(p)例如提供 $(#f00)红石信号/$ 强度 6 会让调节器的压力设置为 $(formula) (15 - 6) / 2 = 4.5 bar/$."
+    },
+    {
+      "type": "text", 
+      "text": "当调节模块狭窄面连接管道的压力达到设定值时, 它将会阻止更多的气体从调节模块流过. 这个模块可以用作 $(thing)变压器/$: 在输入口 (宽) 输入高压空气, 限制输出端输出的压缩空气以达到设定压力.$(p)这使得低压线路可以由高压线路安全的提供压缩空气."
+    },
+    {
+      "type": "text",
+      "text": "$(thing)调节器模块/$ $(italic)只/$ 允许空气从输入口 (宽) 流向输出口 (窄); 空气永远不会反向流动. 这意味着这个模块可以用作单向阀门.$(p)注意, $(thing)调节器/$ $(italic)不能/$ 主动将输出口的气压降低; 只能在压力达到设定值时停止空气流通."
+    },
+    {
+      "type": "text",
+      "title": "Advanced PCB",
+      "text": "当为其添加 $(l:components/advanced_pcb)高级印刷电路板/$ 后, 这个模块可以通过 GUI 来设置更多的控制选项. 你可以在 GUI 中设置压力阈值, 或者勾选 $(bold)高级设置/$ 复选框, 根据红石信号强度来进行压力的设定. 这一功能与 $(l:tubes/safety_module)安全模块/$ 相似."
+    },
+    {
+      "type": "crafting",
+      "text": "制作调节器模块",
+      "recipe": "pneumaticcraft:regulator_tube_module"
+    }
+  ]
+}

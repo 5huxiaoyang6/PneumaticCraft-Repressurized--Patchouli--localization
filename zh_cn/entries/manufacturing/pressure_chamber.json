@@ -1,0 +1,63 @@
+{
+  "name": "压力",
+  "icon": "pneumaticcraft:pressure_chamber_wall",
+  "category": "manufacturing",
+  "advancement": "pneumaticcraft:pressure_tube",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)压力室/$ 是一种多方块结构, 用于将材料通过压力进行加工成其他物品. 由于其储量, 它还能够被当做 \"电池\".$(p)以下规则适用于该多方块结构:$(p)$(li)多块结构必须是一个空心的3x3x3, 4x4x4或5x5x5的立方体."
+    },
+    {
+      "type": "text",
+      "text": "$(li)$(thing)棱/$ 和 $(thing)角落/$ 必须由 $(item)压力室墙壁/$ 或 $(item)压力室 玻璃/$ 构成.$(li)$(thing)面/$ 可以由 $(item)压力室墙壁/$, $(item)压力室玻璃/$, $(item)压力室气阀/$ 或 $(l:manufacturing/pressure_chamber#interface)压力室接口/$ 组成.$(li)至少要有一个 $(item)压力室气阀/$.$(li)建议至少安装两 $(item)压力室接口/$ (一个朝里一个朝外)."
+    },
+    {
+      "type": "multiblock",
+      "name": "Pressure Chamber",
+      "multiblock_id": "pneumaticcraft:pressure_chamber_3",
+      "text": "一个 3x3x3 的压力室, 并且安装了1个 $(item)气阀/$ 和 2个 $(item)接口/$"
+    },
+    {
+      "type": "multiblock",
+      "name": "Pressure Chamber",
+      "multiblock_id": "pneumaticcraft:pressure_chamber_4",
+      "text": "一个 4x4x4 的压力室, 并且安装了2个 $(item)气阀/$ 和2个 $(item)接口/$"
+    },
+    {
+      "type": "multiblock",
+      "name": "Pressure Chamber",
+      "multiblock_id": "pneumaticcraft:pressure_chamber_5",
+      "text": "一个 5x5x5 的压力室, 并且安装了4个 $(item)气阀/$ 和4个 $(item)接口/$"
+    },
+    {
+      "type": "spotlight",
+      "anchor": "interface",
+      "item": "pneumaticcraft:pressure_chamber_interface",
+      "text": "$(item)压力室接口/$ 用于自动化的输入输出 $(thing)压力室/$ 内的物品. 物品 $(italic)必须/$ 通过诸如 $(item)漏斗/$ 或是其他模组的物流系统输入接口. 推荐至少安装两接口: 其中一个将 'I' 朝向外 ($(thing)输入接口/$), 另一个将 'O' 朝向外 ($(thing)输出接口/$)."
+    },
+    {
+      "type": "text",
+      "text": "有多种方法来设定通过 $(item)接口/$ 输入/输出 哪些物品. 你可以通过点击 $(thing)过滤/$ 标签页内的按钮来选择过滤的方式:$(li)$(bold)物品/$ - 匹配物品; 让过滤器为空将允许导入/导出任何物品.$(li)$(bold)名称包含/$ - 匹配物品名称是否包含所输入的字符$(li)$(bold)名称以此开头/$ - 匹配物品名称是否以所输入的字符开头"
+    },
+    {
+      "type": "text",
+      "text": "输出模式的 $(item)接口/$ 会自动将物品淡出到贴着的容器; 这可能不包括其他模组的管道, 因为只有接口认为这是一个容器时才会自动弹出.$(p)每传输一个物品消耗 1000mL $(l:base_concepts/pressure)压缩空气/$. 这意味着如果要传输一组物品, $(item)接口/$ 会消耗 64000mL 压缩空气(4 bar 压力 3x3x3 大小的压力). 如果你看到接口里的物品似乎'卡住了', 那只是在等待充足的压缩空气来驱动物品的传输."
+    },
+    {
+      "type": "text",
+      "text": "$(bold)提示/$$(p)$(li)要制作 $(item)压缩铁锭/$ , 建议使用 $(item)铁块/$ 作为原料, 因为这可以使耗能降为1/9 .$(li)当使用过滤为空的输出接口时, 将接口的工作模式更改为受 $(#f00)红石信号/$ 控制的状态. 这可以避免物品还未开始加工前就被接口导出T.$(li)对于$(l:components/transistor)晶体挂/$ 和 $(l:components/capacitor)电容/$ 可以通过 $(bold)名称包含/$ 'tor' 来过滤(不适用于中文,但可通过输入电或晶来分别过滤)."
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pressure_chamber_wall",
+      "recipe2": "pneumaticcraft:pressure_chamber_glass"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:pressure_chamber_valve",
+      "recipe2": "pneumaticcraft:pressure_chamber_interface"
+    }
+  ]
+}
+

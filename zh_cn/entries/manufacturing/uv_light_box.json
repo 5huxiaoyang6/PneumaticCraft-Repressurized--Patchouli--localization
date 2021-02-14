@@ -1,0 +1,21 @@
+{
+  "name": "紫外光灯箱",
+  "icon": "pneumaticcraft:uv_light_box",
+  "category": "manufacturing",
+  "advancement": "pneumaticcraft:pcb_blueprint",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)紫外光灯箱/$ 用于让 $(l:components/pcb)印刷电路板/$ 在紫外光下曝光的设备, 可以将电路板的特定部分暴露在紫外光下 (曝光位置由 $(l:components/pcb_blueprint)蓝图/$ 确定).$(p)曝光时间最长为10分钟; 如果你给他增加了 $(l:base_concepts/upgrades#speed)速度升级/$ 则会相应的缩短耗时."
+    },
+    {
+      "type": "text",
+      "text": "在10分钟后, 你会获得能用于在 $(l:manufacturing/etching_acid)蚀刻酸/$ 中浸泡并且成功率100%的 $(item)印刷电路板/$ . 当然你可以不用曝光这么久, 但这会使得其在蚀刻酸中蚀刻成功的概率降低.$(p)注意, 曝光的进度在最开始是相对较快的, 但随着进度的增加会逐渐变慢."
+    },
+    {
+      "type": "crafting",
+      "text": "制作紫外光灯箱",
+      "recipe": "pneumaticcraft:uv_light_box"
+    }
+  ]
+}
