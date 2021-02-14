@@ -1,0 +1,23 @@
+{
+  "name": "跳转部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/jump_piece.png",
+  "category": "widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个部件存粹用于实现 $(l:programming/flow_control)程序流/$. 当程序运行到 $(thing)跳转/$ 部件, 它将会检测所连接的 $(l:programming/text)文本/$ 部件, 然后尝试跳转到匹配名称的 $(l:programming/label)标签/$ 部件. 如果因为任何原因跳转失败, 程序会返回 $(l:programming/start)开始/$ 部件. (通常来说, 失败返回的行为不应该发生)."
+    },
+    {
+      "type": "text",
+      "text": "$(thing)跳转/$ 部件可以用于合并程序流中的多个 $(italic)分支/$ (通过使用两个或更多跳转部件跳转到相同的 $(l:programming/label)标签/$, 或者简单地把程序的各个部分分割成‘子程序’来使程序有条理. 在 $(l:programming/programmer)编程台/$ GUI 左下角的 $(bold)显示流/$ 复选框是很有效的提示; 它将会展示 $(thing)跳转/条件/标签/$ 相同名字的部件之间的连线."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/jump_piece.png"
+      ],
+      "text": "$(italic)Might as well/$"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "拼图",
+  "icon": "pneumaticcraft:textures/items/progwidgets/start_piece.png",
+  "category": "programming",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)程序拼图/$, 或 $(thing)拼图/$, 是程序员用来给 $(l:tools/drone)无人机/$ 编写 $(l:programming/programmer)程序/$ 的物品. 当无人机被编入程序时会消耗拼图, 但会在用小的(或空的)程序覆盖 $(item)无人机/$ 时返还拼图.$(p)$(item)编程台/$ GUI 内 $(thing)拼图/$ 的虚拟表现形式为 $(thing)程序部件/$."
+    },
+    {
+      "type": "text",
+      "text": "为了给 $(l:tools/drone)无人机/$ 编程, 你必须身上带着 $(thing)拼图/$, 或者在 $(item)编程台/$ (任何一个面) 边上摆放一个存放了拼图的箱子.$(p)如果你是创造模式, 编程是无花费的: 没有拼图需求."
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle",
+      "recipe2": "pneumaticcraft:programming_puzzle_v2"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle_v3",
+      "recipe2": "pneumaticcraft:programming_puzzle_v4"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle_v5",
+      "recipe2": "pneumaticcraft:programming_puzzle_v6"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle_v7",
+      "recipe2": "pneumaticcraft:programming_puzzle_v8"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle_v9",
+      "recipe2": "pneumaticcraft:programming_puzzle_v10"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle_v11",
+      "recipe2": "pneumaticcraft:programming_puzzle_v12"
+    },
+    {
+      "type": "crafting",
+      "recipe": "pneumaticcraft:programming_puzzle_v13"
+    }
+  ]
+}

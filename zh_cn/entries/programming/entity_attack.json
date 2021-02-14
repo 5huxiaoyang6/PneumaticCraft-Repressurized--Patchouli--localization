@@ -1,0 +1,34 @@
+{
+  "name": "攻击实体部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/attack_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 会攻击其范围内任何活着的生物.$(p)请记住, 连接在 $(thing)攻击实体/$ 部件上的 $(l:programming/area)区域/$ 部件的区域类型总是会被解释为盒装模式, 忽略 $(thing)区域/$ 部件本身定义的模式. 不过, 可以通过使用 白名单/黑名单 来创建不同的形状."
+    },
+    {
+      "type": "text",
+      "title": "实体过滤",
+      "text": "你可以用 $(l:programming/text)文本/$ 部件编辑为 $(l:base_concepts/entity_filter)实体过滤器/$ 来指定攻击的目标. 例如, 如果你想让 $(item)无人机/$ 攻击所有的玩家, 需要在 $(thing)攻击实体/$ 部件 $(italic)右/$ 侧连接 $(thing)文本/$ 部件, 并在其中输入 $(#600)@player/$.$(p)如果你不想让其攻击你自己, 在其 $(italic)左/$ 侧连接 $(thing)文本/$ 部件并输入你的玩家名字."
+    },
+    {
+      "type": "text",
+      "title": "近战攻击",
+      "text": "$(l:tools/drone)无人机/$ 会装备并使用其库存中任何近战武器来攻击. 如果 $(item)无人机/$ 库存中有多个近战武器, 它会装备伤害最高的一把. $(p)你可以用 $(l:programming/inventory_import)从容器提取物品/$ 部件来为 $(item)无人机/$ 提供武器, 强烈推荐这么做, 因为它的徒手攻击很弱"
+    },
+    {
+      "type": "text",
+      "title": "远程攻击",
+      "text": "为 $(l:tools/drone)无人机/$ 添加 $(l:base_concepts/upgrades#entity_tracker)实体追踪升级/$, 它将会被附加上 $(l:tools/minigun)加特林机枪/$. 为其提供 $(l:tools/minigun_ammo)机枪弹药/$ (通常用 $(l:programming/inventory_import)从容器提取物品/$ 部件实现) $(item)无人机/$ 将会使用机枪来对敌人进行远程攻击.$(p)默认距离是 16 格, 可以通过添加 16 个 $(l:base_concepts/upgrades#range_upgrade)范围升级/$ 令其达到最大范围 32 格."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/attack_piece.png"
+      ],
+      "text": "$(italic)I'll be back/$"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "条件:物品过滤器部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/condition_item.png",
+  "category": "widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 部件.$(p)$(thing)条件:物品过滤器/$ 部件允许你进行 $(l:programming/item_filter)物品过滤器/$ 的比较. 在你使用物品过滤器的 $(l:programming/variables)变量/$ 时很有用.$(p)这个部件会检测部件顶部右侧的 $(l:programming/item_filter)物品过滤器/$ , 并检查该物品是否与第二行的 $(thing)物品过滤器(s)/$ 匹配."
+    },
+    {
+      "type": "text",
+      "text": "通常, 右侧标记白名单 (意味着物品会与该过滤器比较), 左侧标记黑名单 (物品 $(italic)不会/$ 与该过滤器比较). 如果匹配, 则结果为 $(thing)true/$. 否则, 结果为 $(thing)false/$."
+    },
+    {
+      "type": "text",
+      "text": "可以添加多个物品用于比较. 在第二行右侧连接更多 $(l:programming/item_filter)物品过滤器/$ , 只有当顶部 $(italic)全部/$ 的物品都被匹配了结果才为 $(thing)true/$. $(l:programming/item_filter)物品过滤器/$ 连接在左侧则必须 $(italic)不/$ 匹配结果才为 $(thing)true/$."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/condition_item.png"
+      ],
+      "text": "$(italic)条件:物品过滤器部件/$"
+    }
+  ]
+}

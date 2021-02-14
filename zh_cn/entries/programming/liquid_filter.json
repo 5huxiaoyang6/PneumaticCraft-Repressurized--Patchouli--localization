@@ -1,0 +1,19 @@
+{
+  "name": "流体过滤器部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/liquid_filter_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)流体过滤器/$ 部件仅仅用于作为其他部件的 $(thing)参数/$ 来使用的. $(thing)右击/$ 部件并在 GUI 内搜索/寻找 流体以将其设定为某一流体."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/liquid_filter_piece.png"
+      ],
+      "text": "$(italic)流体过滤器部件/$"
+    }
+  ]
+}

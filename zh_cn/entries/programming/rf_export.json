@@ -1,0 +1,19 @@
+{
+  "name": "输出RF部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/rf_export_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 有内置容量为 100,000 FE (Forge Energy) 的电池.  使用这个部件, 你可以从无人机的能量存储中输出能量到方块 (例如 一个 $(item)热力膨胀能量单元/$ 或者 $(item)沉浸工程电容/$).$(p)$(italic)尽管它的名字如此, 这个部件输出的是 FE (Forge Energy), 而不是 RF (Redstone Flux). 名字是历史遗留问题./$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/rf_export_piece.png"
+      ],
+      "text": "$(italic)输出RF部件/$"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "发出红石信号部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/emit_redstone_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个部件可以让你的 $(l:tools/drone)无人机/$ 发出 $(#f00)红石信号/$. 你可以通过 $(thing)右击/$ 部件并在 GUI 内进行设置以指定其发出信号的方向. 发射出的红石信号强度取决于该部件所连接的 $(l:programming/text)文本/$ 部件所填入的数字(在 0 - 15 之间)."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/emit_redstone_piece.png"
+      ],
+      "text": "$(italic)发出红石信号部件/$"
+    }
+  ]
+}

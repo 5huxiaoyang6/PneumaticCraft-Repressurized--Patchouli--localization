@@ -1,0 +1,19 @@
+{
+  "name": "条件: 红石部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/condition_redstone_piece.png",
+  "category": "widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 部件.$(p)$(thing)条件: 红石/$ 部件可以(远程)检测 $(l:programming/area)区域/$ 内方块的红石等级是否达到设定阈值."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/condition_redstone_piece.png"
+      ],
+      "text": "$(italic)条件: 红石部件/$"
+    }
+  ]
+}

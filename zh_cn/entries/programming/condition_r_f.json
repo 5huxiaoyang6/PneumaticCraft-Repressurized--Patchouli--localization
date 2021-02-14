@@ -1,0 +1,19 @@
+{
+  "name": "条件: RF 部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/condition_rf_piece.png",
+  "category": "widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 部件.$(p)$(thing)条件: RF/$ 部件可以(远程)检测 $(l:programming/area)区域/$ 内方块的 $(thing)Forge Energy (FE)/$ 水平是否达到设定阈值.$(p)$(italic)尽管名字如此, 但它检测 FE 而不是 RF (Redstone Flux). 名字是历史遗留问题./$"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/condition_rf_piece.png"
+      ],
+      "text": "$(italic)条件: RF 部件/$"
+    }
+  ]
+}

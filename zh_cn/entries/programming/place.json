@@ -1,0 +1,29 @@
+{
+  "name": "放置方块部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/place_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 会在世界上放置库存的. 它会从设定 $(l:programming/area)区域/$ 内离它最近的坐标开始放置.$(p)你可以控制其摆放的方块种类: $(thing)右击/$ 部件来设定 $(item)无人机/$ 是否一行一行的放置, 时从顶部放置到底部还是相反."
+    },
+    {
+      "type": "text",
+      "title": "限制摆放数量",
+      "text": "$(thing)右击/$ 部件, 你可以在其中限制放置行为的次数. 例如限制为一, $(item)无人机/$ 将只会放置一个方块, 并且在放置完方块后执行之后部件.$(p)如果不限制, 无人机只会在不能放置任何方块时结束该行为."
+    },
+    {
+      "type": "text",
+      "title": "过滤",
+      "text": "通过连接 $(l:programming/item_filter)物品过滤器/$ 部件来实现对 $(item)无人机/$ 所放置方块类型的限制. 连接在 $(italic)右侧/$ 是物品白名单, 在 $(italic)左侧/$ 是黑名单."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/place_piece.png"
+      ],
+      "text": "$(italic)放置方块部件/$"
+    }
+  ]
+}

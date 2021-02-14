@@ -1,0 +1,30 @@
+{
+  "name": "收获作物部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/harvest_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "无人机会收获 $(l:programming/area)区域/$ 内所有生长成熟的作物和树木. 收获下来的物品 $(italic)不会/$ 被拾取; 除非另行添加 $(l:programming/pickup_item)捡起物品/$ 部件, 或者使用其他收集物品的方式, 例如使用单独的 $(item)无人机/$ 进行拾取.$(p)你可以连接可选的 $(l:programming/item_filter)物品过滤器/$ 来限制哪些作物能被收获 (将过滤器设定为作物的种子)."
+    },
+    {
+      "type": "text",
+      "title": "工具",
+      "text": "你可以让 $(item)无人机/$ $(l:programming/inventory_import)提取/$ 一个 $(item)锄头/$. 当其装备了锄头, 作物会自动补种 (这会消耗锄头的耐久).$(p)你可以强制 $(item)无人机/$ $(italic)仅/$ 使用锄头收获作物. 这需要在该部件的 GUI 内勾选 $(item)需要锄头/$ 复选框; 如果,当锄头损坏了, 无人机在获得其他锄头之前不会收割."
+    },
+    {
+      "type": "text",
+      "title": "限制收获数量",
+      "text": "通过 $(thing)右击/$ $(thing)收获/$ 部件, 可以将收获操作的次数限定在指定次数.$(p)例如设定为1, 每次执行到该部件 $(item)无人机/$ 只会收获一个方块, 然后就跳转到下一个部件."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/harvest_piece.png"
+      ],
+      "text": "$(italic)离开我的土地/$"
+    }
+  ]
+}
+

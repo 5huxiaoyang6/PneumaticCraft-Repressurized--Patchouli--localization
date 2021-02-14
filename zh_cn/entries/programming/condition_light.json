@@ -1,0 +1,19 @@
+{
+  "name": "条件:亮度等级部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/condition_light_piece.png",
+  "category": "widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一个 $(l:programming/conditions)条件/$ 部件.$(p)$(thing)条件:亮度等级/$ 部件允许你(远程)检测所连接的 $(l:programming/area)区域/$ 内亮度等级是否符合配置的阈值."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/condition_light_piece.png"
+      ],
+      "text": "$(italic)条件:亮度等级部件/$"
+    }
+  ]
+}

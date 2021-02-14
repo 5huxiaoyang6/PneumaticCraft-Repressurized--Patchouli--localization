@@ -1,0 +1,17 @@
+{
+  "name": "作物架",
+  "icon": "pneumaticcraft:crop_support",
+  "category": "semiblocks",
+  "advancement": "pneumaticcraft:root",
+  "pages": [
+    {
+      "type": "text",
+      "text": "当把它放置在 $(thing)作物/$ 上时, 它将会促进作物的生长. $(thing)绿色粒/$ 用以表明 $(item)作物架/$ 对作物的促进作用.$(p)如果需要移除 $(link)作物架/$, 除了破坏其下方的方块, 还可以通过手持 $(l:tools/logistics_configurator)物流配置器/$ 或是其他的 $(item)作物架/$ $(thing)潜行右击/$ 方块."
+    },
+    {
+      "type": "crafting",
+      "text": "制作作物架",
+      "recipe": "pneumaticcraft:crop_support"
+    }
+  ]
+}

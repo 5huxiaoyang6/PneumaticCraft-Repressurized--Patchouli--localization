@@ -1,0 +1,23 @@
+{
+  "name": "物品赋值部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/item_assign_piece.png",
+  "category": "widget_other",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)物品赋值/$ 是一种高级部件, 允许你存储一个物品到 $(l:programming/variables)变量/$ 里. 变量值可以是坐标或者物品; 这里我们讨论后者.$(p)详情查看 $(l:programming/coordinate_operator)坐标算子/$ 部件的信息来了解坐标变量和变量的一般说明."
+    },
+    {
+      "type": "text",
+      "text": "要将物品存入给定的 $(thing)变量/$, 需要在 $(thing)物品赋值/$ 部件 $(italic)右侧/$ 放置 $(l:programming/item_filter)物品过滤器/$ 部件. 连接的过滤器会转移到变量内, 你可以通过 $(thing)右击/$ $(thing)物品赋值/$ 部件打开其 GUI 来设定变量名. 只有正真的物品会被转移到变量内; 过滤器设定 (例如矿物辞典) 不会转移."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/item_assign_piece.png"
+      ],
+      "text": "$(italic)物品赋值部件/$"
+    }
+  ]
+}

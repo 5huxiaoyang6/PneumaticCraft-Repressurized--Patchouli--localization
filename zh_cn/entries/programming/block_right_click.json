@@ -1,0 +1,23 @@
+{
+  "name": "右击方块部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/block_right_click_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "无人机将会用其库存的第一个物品依次 $(thing)右击/$ 与该部件连接的 $(l:programming/area)区域/$ 部件范围内的所有坐标. 这可以用来使用锄头耕地, 播种, 使用骨粉, 投掷药水, 放置无人机, 用扳手旋转方块... 无穷的可能性. 可以通过添加 $(l:programming/item_filter)物品过滤器/$ 并设置好方块来使其对 $(thing)右击/$ 的方块进行过滤."
+    },
+    {
+      "type": "text",
+      "text": "你可以用这个部件来常规的放置方块. 然而 $(italic)不推荐/$ 这个做, 因为当无人机尝试右击的坐标已经存在了方块, 它会右击该方块, 导致方块被 $(italic)紧挨着/$ 放置在边上而不是设定位置.$(p)正因如此, 用 $(l:programming/place)放置方块/$ 部件来做这个工作更加有效. 当然有些情况 (例如尝试播种 $(item)种子/$) 使用 $(thing)右击方块/$ 更有效."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/block_right_click_piece.png"
+      ],
+      "text": "$(italic)右击方块部件/$"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "name": "对于每个物品部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/for_each_item.png",
+  "category": "widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个高级部件会遍历每一个连接了的 $(l:programming/item_filter)物品过滤器/$. 对于每一个过滤器, 它会其设置一个指定的变量, 然后跳转到与其连接的 $(l:programming/text)文本/$ 部件匹配的 $(l:programming/label)标签/$. 当标签的流程执行结束(当它到达程序结尾通常会返回 $(l:programming/start)开始/$)它会回到 $(thing)对于每个物品/$ 部件然对下一个 $(thing)物品过滤器/$ 执行同样的流程. ."
+    },
+    {
+      "type": "text",
+      "title": "中止遍历",
+      "text": "你可以通过加入物品变量值为空的过滤器(可以使用物品赋值部件做到)来中止 $(thing)对于每个物品/$ 的遍历. 之后, 当程序跳转回 $(thing)对于每个物品/$, 程序会注意到这一点, 然后停止遍历."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/for_each_item.png"
+      ],
+      "text": "$(italic)对于每个物品部件/$"
+    }
+  ]
+}

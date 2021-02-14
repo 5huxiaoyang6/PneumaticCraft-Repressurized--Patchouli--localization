@@ -1,0 +1,23 @@
+{
+  "name": "合成物品部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/craft_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 会使用其库存内的物品来合成. 为了指定合成配方, 需要在其右侧放置 $(l:programming/item_filter)物品过滤器/$, 并按照配方的样式摆放.$(p)你不必放满九个 $(thing)物品过滤器/$: 只要你能摆放出配方即可, 这也是有效的."
+    },
+    {
+      "type": "text",
+      "text": "默认, 合成物品部件会尝试尽可能多的合成物品; 你可以使用 GUI 内的 $(thing)使用计数/$ 来限制合成数量.$(p)你可能会需要为 $(item)无人机/$ 添加 $(l:base_concepts/upgrades#dispenser)发射器升级/$ 来提供更大的库存容量."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/craft_piece.png"
+      ],
+      "text": "$(italic)合成物品部件/$"
+    }
+  ]
+}

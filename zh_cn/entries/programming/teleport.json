@@ -1,0 +1,19 @@
+{
+  "name": "传送部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/teleport_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)传送/$ 是更昂贵版的 (依照其在 $(l:base_concepts/pressure)空气/$ 上的用量) $(l:programming/goto)去往位置/$ 部件, 但坦率地说: $(l:tools/drone)无人机/$ 会传送到设定 $(l:programming/area)区域/$ 内距离其最近的位置.$(p)$(item)无人机/$ 每次传送会消耗 10000mL 空气, 这是没有升级的 $(item)无人机/$ 的容量, 因此推荐使用 $(l:base_concepts/upgrades#volume)容积升级/$."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/teleport_piece.png"
+      ],
+      "text": "$(italic)现在我在这. 现在我又在那./$"
+    }
+  ]
+}

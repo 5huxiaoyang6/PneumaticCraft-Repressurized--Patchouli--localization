@@ -1,0 +1,23 @@
+{
+  "name": "从容器提取物品部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/inventory_import_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": " $(l:tools/drone)无人机/$ 将会移动到设定 $(l:programming/area)区域/$ 内最近的容器, 从容器中提取物品并存到 $(item)无人机/$ 的库存中.$(p)$(thing)右击/$ 部件打开 GUI. 这里你能够设定 $(item)无人机/$ 从容器的哪个面提取物品. 你还可以指定要提取的物品的最大数量."
+    },
+    {
+      "type": "text",
+      "text": "你还可以连接任意数量 (包括零) 的 $(l:programming/item_filter)物品过滤器/$ 部件来限制能够被提取的物品种类. 记住, 连接在 $(italic)右侧/$ 的过滤器的作用是白名单, 在 $(italic)左侧/$ 的作用是黑名单.$(p)这个部件在 $(item)无人机/$ 的库存已满或当容器内没有更多(被允许的)物品时完成工作."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/inventory_import_piece.png"
+      ],
+      "text": "$(italic)我要那个, 谢谢/$"
+    }
+  ]
+}

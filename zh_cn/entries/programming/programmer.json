@@ -1,0 +1,65 @@
+{
+  "name": "编程台",
+  "icon": "pneumaticcraft:programmer",
+  "category": "programming",
+  "advancement": "pneumaticcraft:printed_circuit_board",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(item)编程台/$ 用于给 $(l:tools/drone)无人机/$ 编程, 使用 $(l:programming/puzzle_pieces)拼图形/$ 可视化的变成系统在 GUI 内进行组合. $(thing)编程台/$ 在操作时不需要为其提供 $(l:base_concepts/pressure)压力/$.在其他的 $(thing)编程/$ 条目中有更多的关于如何进行无人机编程的信息."
+    },
+    {
+      "type": "crafting",
+      "text": "制作编程台",
+      "recipe": "pneumaticcraft:programmer"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/patchouli/programmer_gui.png"
+      ],
+      "text": "$(italic)编程台的 GUI: 查看之后的页面来了解每个部分的信息/$"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)1. 主编程区域/$$(p)这个区域是你实际程序构建的地方. 部件从 $(thing)部件盘 (区域 2)/$ 拖到这里, 然后合并在一起形成程序.$(p)你可以使用鼠标滚轮或右边的滚动条放大或缩小编程区域."
+    },
+    {
+      "type": "text",
+      "text": "$(bold)2. 部件盘/$$(p)这个区域存放这你用于构建程序的各个部件. 它保存的部件数量比展示出来的多; 你可以通过托盘下的箭头按钮循环浏览页面, 或者使用 $(thing)空格键/$ 或 $(thing)Tab键/$ 来展开托盘以展现所有部件.$(p)展开后, 托盘还会在上面显示一个文本框，你可以在这里输入一个过滤器字符来搜索部件."
+    },
+    {
+      "type": "text",
+      "text": "$(bold)3. 无人机槽/$$(p)放置 $(l:tools/drone)无人机/$ (或 $(l:components/network_components)网络存储器/API/$) t来为其编入程序. 当准备好为无人机编程时, 按下 $(thing)⟶/$ 按钮来写入程序. 如果你愿意, 你可以使用左侧的文本框来为无人机命名. 如果成功了, 你会听到反馈的声音.$(p)你还可以用 $(thing)⟵/$ 按钮来从无人机 (或者 网络存储器/API) 导入程序."
+    },
+    {
+      "type": "text",
+      "text": "$(bold)4. 难度选择/$$(p)这些单选框用于控制哪些编程部件在托盘中可用. 它们还可以启用/禁用一些高级功能, 例如 $(l:programming/coordinate_operator)变量/$.$(p)$(bold)5. 玩家背包/$$(p)你自己的背包; 如果你有 $(l:tools/gps_tool)定位工具s/$ 或 $(l:tools/gps_area_tool)区域定位工具/$, 你可以用它们点击 $(l:programming/area)区域/$ 或 $(l:programming/coordinate)坐标/$ 部件来转移它们的设定到部件中."
+    },
+    {
+      "type": "text",
+      "text": "$(bold)6. 引导 & 显示选项/$$(p)你可以使用这些按钮来:$(li)引导至 $(l:programming/start)开始/$ 你程序的部件$(li)引导至你最后放置的部件$(li)切换显示每个部件的额外信息$(li)切换 $(l:programming/jump)跳转/$ 和 $(l:programming/label)标签/$ 之间连线的显示"
+    },
+    {
+      "type": "text",
+      "text": "$(bold)7. 杂项按钮/$$(p)界面左侧的按钮按顺序排列:$(li)$(thing)撤销/$ 最多最近的20个动作$(li)$(thing)恢复/$ 撤销的动作$(li)$(thing)导入或导出/$ 你的程序并以 JSON 格式传到 $(l:https://pastebin.com)pastebin.com/$ (Pastebin 的登陆时可选的)$(li)$(thing)删除/$ 整个程序 (可以被撤销)$(li)$(thing)转换/$ 你的程序为 $(thing)相对/$ 位置 (详见 $(l:programming/programmer#convert_relative)这个网页/$ 了解更多信息)"
+    },
+    {
+      "type": "text",
+      "title": "Sharing Programs",
+      "text": "如果你想将你的程序展示给其他玩家, 你有两种方法可选:$(p)$(li)你可以选择 $(thing)Pastebin/$ 按钮将程序上传到 $(l:https://pastebin.com)pastebin.com/$$(li)$(thing)Pastebin/$ GUI 也允许你从粘贴板进行复制和粘贴$(li)你可以把程序保存进 $(l:tools/drone)无人机/$ 或 $(l:components/network_components)网络存储器/网络API/$ 然后将这个物品交给其他玩家."
+    },
+    {
+      "type": "text",
+      "anchor": "convert_relative",
+      "title": "转换为相对位置",
+      "text": "假设你设计了一个运行自动化农场的程序, 你想分享这个. 而不同世界的玩家有不同坐标的农场, 因此他们必须改变每一个 $(l:programming/area)区域/$ 部件的参数; 多么痛苦.$(p)$(thing)转换为相对位置/$ 按钮使得这一切变得简单; 它还提供了工具提示, 提示你需要做什么来转换你的程序."
+    },
+    {
+      "type": "text",
+      "anchor": "convert_relative",
+      "title": "转换为相对位置 (续)",
+      "text": "你需要添加一个固定的 $(l:programming/coordinate_operator)坐标算子/$ 部件, 以及一个包含 $(thing)初始位置/$ 的 $(l:programming/coordinate)坐标/$ 部件 (例如输入物品的箱子). 然后将会转换所有绝对位置 (区域或坐标) 为基于你初始位置的相对位置.$(p)现在, 你的程序用户只需要改变一个坐标位置就可以了!"
+    }
+  ]
+}

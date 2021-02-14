@@ -1,0 +1,24 @@
+{
+  "name": "对于每个坐标部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/for_each_coordinate.png",
+  "category": "widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这个高级部件将会遍历指定 $(l:programming/area)区域/$ 的每个坐标. 对于每个坐标, 它会为其设置$(ttcolor)$(t:右击部件以设置变量)指定的变量/$, 然后跳转到与其连接的 $(l:programming/text)文本/$ 部件匹配的 $(l:programming/label)标签/$. 当标签的流程执行结束(当它到达程序结尾通常会返回 $(l:programming/start)开始/$), 它会回到 $(thing)对于每个坐标/$ 部件然对下一个坐标执行同样的流程."
+    },
+    {
+      "type": "text",
+      "title": "中止遍历",
+      "text": "你可以通过加入坐标变量值为(0, 0, 0)的坐标来中止 $(thing)对于每个坐标/$ 的遍历. 之后, 当程序跳转回 $(thing)对于每个坐标/$, 程序会注意到这一点, 然后停止遍历."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/for_each_coordinate.png"
+      ],
+      "text": "$(italic)对于每个坐标部件/$"
+    }
+  ]
+}

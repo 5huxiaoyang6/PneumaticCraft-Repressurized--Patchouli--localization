@@ -1,0 +1,23 @@
+{
+  "name": "捡起物品部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/item_pick_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 会拾取物品世界上的物品并存入其库存中. 请记住任何连接在该部件上的 $(l:programming/area)区域/$ 部件的区域类型都会被解释为 $(thing)盒装/$, 不论设定为何种区域类型. 但任然可以实现复杂的区域设置, 通过使用 白名单/黑名单 来实现."
+    },
+    {
+      "type": "text",
+      "text": "你可以为其添加 $(l:programming/item_filter)物品过滤器/$ 部件来限制其能够拾取的物品类型 (记住, 放置在 $(thing)左侧/$ 是黑名单).$(p)当没有 (匹配过滤器的) 物品可以被无人机存入库存或没有物品可以被拾取时完成工作."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/item_pick_piece.png"
+      ],
+      "text": "$(italic)我的, 我的, 都是我的/$"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "name": "挖掘方块部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/dig_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 将会在指定的 $(l:programming/area)区域/$ 挖掘/开采方块. 破坏方块掉落的物品不会被 $(item)无人机/$ 拾取. 挖掘方块的顺序与 $(l:programming/place)放置方块/$ 部件类似. 与 $(thing)放置方块/$ 相同的是, 你可以控制是否应该逐层挖掘区域(从上到下或从下到上)."
+    },
+    {
+      "type": "text",
+      "title": "使用工具",
+      "text": "你可以让 $(item)无人机/$ $(l:programming/inventory_import)提取/$ 稿/铲 等等 并让它使用工具. 当 $(item)无人机/$ 携带了多种工具, 它会自动使用最合适的来破坏方块.$(p)你可以勾选 $(thing)需要挖掘工具/$ 复选框来阻止无人机尝试在没有工具的情况下挖掘(这真的很慢)."
+    },
+    {
+      "type": "text",
+      "title": "限制挖掘数量",
+      "text": "通过在 GUI 内勾选 $(thing)限制方块交互/$ 复选框来设置特定的挖掘数量. 例如设置为1, 在进入下一个程序部件之前, $(item)无人机/$ 就只会挖掘一个方块(不论区域中有多少方块). 这可以用来之挖掘几个方块, 然后检查工具耐久, 并在其坏掉之前修复它"
+    },
+    {
+      "type": "text",
+      "title": "过滤方块",
+      "text": "最后, 你可以使用 $(l:programming/item_filter)物品过滤器/$ 设定哪些方块可以被挖掘.$(p)当用来标记作物方块之类时, 可以标记破坏方块得到的产物来过滤(如 $(item)小麦种子/$). 例外情况是, 有的方块 $(italic)不会/$ 掉落物品(甚至使用了精准采集), 对于这些方块可以在过滤器 GUI 内勾选 $(thing)Match by block/$ 复选框."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/dig_piece.png"
+      ],
+      "text": "$(italic)嗨 你好/$"
+    }
+  ]
+}

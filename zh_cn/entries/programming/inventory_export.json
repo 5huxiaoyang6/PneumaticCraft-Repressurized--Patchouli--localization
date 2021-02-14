@@ -1,0 +1,23 @@
+{
+  "name": "向容器输出物品部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/inventory_export_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "与 $(l:programming/inventory_import)从容器提取物品/$ 部件相反: $(l:tools/drone)无人机/$ 会移动到指定 $(l:programming/area)区域/$ 最近的容器然后卸载 $(item)无人机/$ 库存内的物品.$(p)$(thing)右击/$ 打开部件的 GUI, 在这里你能设置无人机从容器的哪个面输入物品. 你还能指定要输出物品的最大数量."
+    },
+    {
+      "type": "text",
+      "text": "你还可以连接任意数量 (包括零) 的 $(l:programming/item_filter)物品过滤器/$ 部件来限制能够被输出的物品种类. 记住, 连接在 $(italic)右侧/$ 的过滤器的作用是白名单, 在 $(italic)左侧/$ 的作用是黑名单.$(p)这个部件在 $(item)无人机/$ 的库存空了或者区域内没有可以接受物品的容器时完成工作."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/inventory_export_piece.png"
+      ],
+      "text": "$(italic)不客气/$"
+    }
+  ]
+}

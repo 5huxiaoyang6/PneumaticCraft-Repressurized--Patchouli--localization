@@ -1,0 +1,19 @@
+{
+  "name": "等待部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/wait_piece.png",
+  "category": "widget_flow",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 等待设定的时间什么都不做. 通过连接 $(l:programming/text)文本/$ 部件来设定时间.$(p)接受以下的时间格式:$(li)$(thing)20/$: 等待疫苗 (20 ticks)$(li)$(thing)10s/$: 等待十秒$(li)$(thing)5m/$: 等待五分钟"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/wait_piece.png"
+      ],
+      "text": "$(italic)Godot/$"
+    }
+  ]
+}

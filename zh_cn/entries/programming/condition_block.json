@@ -1,0 +1,23 @@
+{
+  "name": "条件:方块部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/condition_block_piece.png",
+  "category": "widget_cond",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "这是一种 $(l:programming/conditions)条件/$ 部件.$(p)$(thing)条件:方块/$ 部件允许你对 $(l:programming/area)范围/$ 的方块进行监测. 举个例子, 你可以用它来监测一个范围内的作物有没有成熟. 你可以通过为其添加 $(l:programming/item_filter)物品过滤器/$ 来过滤方块."
+    },
+    {
+      "type": "text",
+      "text": "无人机会检测这个方块是否能被采集到, 如果是则会以采集到的物品进行判断. 如果不行, 则会以方块的形式判断.$(p)例如,你可以在过滤里设置小麦, 一旦作物破坏后会掉落小麦 (= 完全成熟) 就会判断为真 ."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/condition_block_piece.png"
+      ],
+      "text": "$(italic)条件:方块部件/$"
+    }
+  ]
+}

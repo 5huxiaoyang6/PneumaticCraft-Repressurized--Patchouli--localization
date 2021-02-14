@@ -1,0 +1,57 @@
+{
+  "name": "变量",
+  "icon": "minecraft:paper",
+  "category": "programming",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(thing)变量/$ 存储和操作位置 (又名坐标) 来实现高级的无人机功能.$(p)要想在程序中创建或操作变量, 需要使用 $(l:programming/coordinate_operator)坐标算子/$ 和 $(l:programming/coordinate)坐标/$ 部件, 并使用 $(l:programming/condition_coordinate条件: 坐标/$ 部件对变量进行比较."
+    },
+    {
+      "type": "text",
+      "text": "在 $(l:programming/area)区域/$ 部件中, 可以用 $(thing)变量/$ 来替代定位工具.$(p)这些 $(thing)变量/$ 在重新加载世界时不会改变, 因此可以用来制作永不停止的挖掘程序, 例如, 无人机的挖掘区域由 $(thing)变量/$ 来决定.$(p)这是一个较老的但任然实用的教程, $(l:https://www.youtube.com/watch?v=FIjEdD_Yj9Y)这个视频由 MineMaarten 制作/$."
+    },
+    {
+      "type": "text",
+      "text": "虽然 $(thing)变量/$ 只存储坐标 (X/Y/Z 三元组), 但如果你仔细想想这也可以用于存储 $(thing)整数/$ 和 $(thing)布尔值/$. 只使用一个轴用来作为整数, 布尔值可以定义像 '0' = false, 其他任何数 = true. 祝你玩的愉快!"
+    },
+    {
+      "type": "text",
+      "title": "变量类型",
+      "text": "这里由三种变量类型:$(li)$(thing)局部变量/$: 这些数据存储在每个无人机上并使用'变量名'来调用.$(li)$(thing)全局变量/$: 就像名字所表达的, 变量对所有无人机都是全局的, 可以用于在无人机之间共享数据. 调用它的方法是 '#变量名'.$(li)$(thing)特殊变量/$ 可以用来检索一些关于无人机的元数据, 调用方法为 '$变量名'."
+    },
+    {
+      "type": "text",
+      "anchor": "global",
+      "title": "全局变量",
+      "text": "$(thing)全局变量/$ 由前缀 '#'. 普通的变量对于所有的 $(l:tools/drone)无人机/$ 并不是独一无二的; 它们不能被共享. 全局变量是 $(italic)可以/$ 共享的. $(p)这使得无人机可以互相沟通. 此外, $(l:machines/universal_sensor)万能传感器/$ 也可以检测全局变量, 并且依据变量值发出 $(#f00)红石信号/$, $(l:tools/remote)远程终端/$ 则可以显示变量值或者对其进行修改."
+    },
+    {
+      "type": "text",
+      "title": "全局变量 (续)",
+      "text": "为了便利, $(thing)全局变量/$ 可以使用指令 $(#800)/setGlobalVariable <变量名> <x> <y> <z>/$ 进行修改. 这在自定义映射或调试中很有用. 该命令的执行不仅限于服务端操作.$(p)获取变量状态 (对调试有用), 使用指令 $(#800)/getGlobalVariable <变量名>/$. 这将会返回坐标值和物品."
+    },
+    {
+      "type": "text",
+      "anchor": "special",
+      "title": "特殊变量",
+      "text": "以下是特殊变量:$(li)$(thing)$owner/$: 该 $(l:tools/drone)无人机/$ 拥有者的坐标. 如果玩家不在线则为 0.0.0.$(li)$(thing)$drone/$: 获得无人机的坐标.$(li)$(thing)$player=<玩家名>/$: 获得玩家 '<玩家名>' 的坐标(不区分大小写). 如果玩家不在线或没有该玩家则为 0.0.0."
+    },
+    {
+      "type": "text",
+      "title": "调试",
+      "text": "有时显示变量值用于调试是很有用的. 你可以由以下几种方法显示变量值:$(li)使用 $(l:programming/rename)重命名/$ 部件来显示变量值$(li)用 $(l:programming/edit_sign)编辑告示牌/$ 部件显示变量值$(li)使用 $(l:tools/remote)远程终端/$ 的 $(l:tools/remote#label)标签/$."
+    },
+    {
+      "type": "text",
+      "title": "调试 (续)",
+      "text": "要将一个变量运用上述方法之一来显示显示, 需要使用的语法为 $(thing)${变量名}/$.$(p)注意, 特殊变量和全局变量在这里依然邮箱, 因此为了获取无人机的位置, 你需要输入 $(thing)${$drone}/$, 而对于全局变量则是 $(thing)${#全局变量名}/$."
+    },
+    {
+      "type": "text",
+      "title": "调试 (续)",
+      "text": "你也可以只显示坐标的X、Y或Z分量, 方法是分别在变量名后面加上 $(thing).x/$, $(thing).y/$ 或 $(thing).z/$.$(p)例如, 要显示无人机拥有者的 Y 坐标, 要用 $(thing)${$owner.y}/$."
+    }
+  ]
+}

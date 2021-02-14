@@ -1,0 +1,19 @@
+{
+  "name": "右击实体部件",
+  "icon": "pneumaticcraft:textures/items/progwidgets/entity_right_click_piece.png",
+  "category": "widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "$(l:tools/drone)无人机/$ 会用库存的第一个物品 $(thing)右击/$ 指定 $(l:programming/area)区域/$ 内的所有实体一次. 这可以用来剪羊毛, 挤奶以及更多功能!"
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/items/progwidgets/entity_right_click_piece.png"
+      ],
+      "text": "$(italic)右击实体部件/$"
+    }
+  ]
+}
